@@ -7,15 +7,15 @@
       "autoplay": 9000,
       "slides": [
         {
-          "img": "/img/uploads/rect89.webp",
-          "link": "/headset",
-          "alt": "Headset banner",
+          "img": "/img/uploads/banner-davinci-vaporstore.jpg",
+          "link": "/",
+          "alt": "Davinci",
           "start": "2020-04-11T05:54:06.750Z",
-          "end": "2020-12-31T03:00:00.000Z"
+          "end": ""
         },
         {
-          "img": "/img/uploads/banner2.webp",
-          "alt": "Banner sample two",
+          "img": "/img/uploads/banner-trustvox-opinioes-vaporstore.png",
+          "alt": "opinioes",
           "start": "",
           "end": ""
         }
@@ -23,7 +23,7 @@
     },
     {
       "type": "info-bar",
-      "enabled": true
+      "enabled": false
     },
     {
       "type": "collection-shelf",

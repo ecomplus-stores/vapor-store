@@ -1,1 +1,63 @@
 // Add your custom CSS here.
+.top-bar {
+  &__countdown {
+    &::before {
+      content: "\e844";
+      font-style: normal;
+      font-variant: normal;
+      text-rendering: auto;
+      text-transform: none;
+      line-height: 1;
+      font-family: storefront-fa;
+      font-weight: 400;
+    }
+    background: #000 !important;
+    font-size: 13px
+  }
+  &__nav {
+    display: none !important;
+  }
+}
+.header {
+  @media(min-width: 992px) {
+    &__toggler {
+      display: none;
+    }
+  }
+  & i {
+    color: #000;
+  }
+  &__nav a {
+    &:hover {
+      background: none;
+      color: #c4a66d
+    }
+    &:first-child {
+      border-right: 2px solid #c4a66d;
+      border-radius: 0;
+    }
+    &:last-child {
+      border-left: 2px solid #c4a66d;
+      border-radius: 0;
+    }
+    &:nth-child(2) {
+      border-radius: 0;
+    }
+    padding: 9px 12px;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  background: #dac7a4;
+}
+.products-carousel {
+  &__item {
+    &:hover {
+      border:1px solid #f4f4ec;
+      box-shadow:0 3px 5px 0 rgba(0,0,0,.1)
+    }
+    border:1px solid #f5eded
+  }
+}
+#search-input {
+  border-radius: 20px
+}
