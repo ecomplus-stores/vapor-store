@@ -41,6 +41,10 @@
       "collection_id": null
     },
     {
+      "type": "custom-html",
+      "html": "<span class=\"titulo-marcas\"><b>REVENDEDOR AUTORIZADO</b><span class=\"subtitulo-marcas\">GARANTIA 100% NO BRASIL! CONFIRA!</span></span>"
+    },
+    {
       "type": "banners-grid",
       "banners": [
         {
