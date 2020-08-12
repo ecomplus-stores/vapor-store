@@ -47,6 +47,14 @@
     font-size: 16px;
     font-weight: 700;
   }
+  #cart-count {
+    background: #c0a064;
+    font-size: 10px;
+    font-weight: 400;
+    border-radius: 20px;
+    top: 15px;
+    right: 18px;
+  }
   background: #dac7a4;
 }
 .products-carousel {
@@ -60,4 +68,13 @@
 }
 #search-input {
   border-radius: 20px
+}
+.banners-grid:first-child {
+  .container {
+    width: 100%;
+    max-width: 80rem;
+  }
+  margin: 0px;
+  width: 100%;
+  background: #000;
 }
