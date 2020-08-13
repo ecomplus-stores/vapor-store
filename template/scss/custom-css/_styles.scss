@@ -30,7 +30,7 @@
   &__nav a {
     &:hover {
       background: none;
-      color: #c4a66d
+      color: #fff;
     }
     &:first-child {
       border-right: 2px solid #c4a66d;
@@ -77,4 +77,111 @@
   margin: 0px;
   width: 100%;
   background: #000;
+}
+.titulo-marcas {
+  & b {
+    position: relative;
+    color: #000;
+    font-size: 17px;
+    margin-top: -13px !important;
+    padding: 0 12px;
+    background: #fff;
+    line-height: 17px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 0px;
+    text-align: center;
+    width: 200px;
+}
+    border-style: solid;
+    border-width: 13px 0 0;
+    -moz-border-image: url(/img/uploads/borda-revenda-autorizada-new.png) 13 0 0 repeat;
+    -webkit-border-image: url(/img/uploads/borda-revenda-autorizada-new.png) 13 0 0 repeat;
+    -o-border-image: url(/img/uploads/borda-revenda-autorizada-new.png) 13 0 0 repeat;
+    border-image: url(/img/uploads/borda-revenda-autorizada-new.png) 13 0 0 fill repeat;
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+}
+@media  screen and (min-width: 1368px) {
+
+}
+
+//desktop normal size
+@media  screen and (min-width: 992px) and (max-width: 1367px) {
+  //slider full
+  .banner-slider {
+    max-width: 100%;
+  }
+  .stamps {
+    display: flex;
+    justify-content: center;
+  }
+}
+// apenas tablet
+@media screen and (min-width: 481px) and (max-width: 991px) {
+  //slider full
+  .banner-slider {
+    max-width: 100%;
+  }
+  .stamps {
+    display: flex;
+    justify-content: center;
+  }
+}
+// apenas mobile
+@media screen and (max-width: 480px) {
+  .banners-grid:last-child > .container > .row > .col-12 {
+      flex: 0 0 50% !important;
+  }
+  .stamps {
+    overflow-x: scroll;
+  }
+}
+#menu {
+  & i {
+    color: #000;
+  }
+  & .menu__list a:hover {
+    background: #c0a064 !important;
+    color: #fff !important;
+  }
+}
+.footer {
+  & .container {
+    & #nome {
+      order: 4;
+    }
+    & #paginas {
+      order: 2
+    }
+    & #categorias {
+      order: 1;
+    }
+    & #contato {
+      order: 3;
+    }
+    display: flex;
+    flex-direction: column;
+  }
+  &__title {
+    color: #c0a064 !important;
+  }
+  & p, & a, & i, & span {
+    color: #fff;
+  }
+  background: #000;
+  color: #fff;
+}
+.product-card {
+  &__name, &__prices {
+    text-align: center;
+  }
+}
+.product__buy button {
+  &:hover {
+    background: #9a8151;
+  }
+  background: #c0a064;
+  border: 1px solid #9a8151;
 }

@@ -1,9 +1,9 @@
 {
   "store_id": 1138,
-  "name": "vapor-store",
+  "name": "VaporStore -  Envios do BRASIL",
   "domain": "vapor-store.netlify.app",
-  "short_name": "vapor-store",
-  "description": "vapor-store",
+  "short_name": "VaporStore",
+  "description": "Loja especializada em Vaporizadores de Ervas e acessórios destinados a aromaterapia. Trabalhamos exclusivamente com produtos originais. Garantia assegurada! Seu novo vaporizador pode ser portátil ou de mesa. Pagamento facilitado a vista com 10% de desconto ou em até 12x sem juros no cartão. Somos revenda autorizada da Arizer, Boundless, Da Vinci e Vapir. Trabalhamos também com Pax, Mighty, Volcano, Firefly, Flowermate e Xvape Fog.",
   "primary_color": "#313131",
   "secondary_color": "#e36159",
   "bg_color": "#fff",
