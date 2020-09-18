@@ -1,4 +1,5 @@
 // Add your custom CSS here.
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Raleway:wght@400;700;800&family=Roboto:wght@400;500;700&family=Source+Sans+Pro:wght@400;700&display=swap');
 .top-bar {
   &__countdown {
     &::before {
@@ -20,33 +21,49 @@
 }
 .header {
   @media(min-width: 992px) {
+    &__logo {
+    max-width: 400px;
+    max-height: 100px;
+    }
     &__toggler {
       display: none;
     }
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
   }
   & i {
     color: #000;
   }
-  &__nav a {
-    &:hover {
-      background: none;
-      color: #fff;
+  &__nav {
+    & a {
+      &:hover {
+        background: none;
+        color: #c4a66d;
+      }
+      &:first-child {
+        border-right: 2px solid #c4a66d;
+        border-radius: 0;
+      }
+      &:last-child {
+        border-left: 2px solid #c4a66d;
+        border-radius: 0;
+      }
+      &:nth-child(2) {
+        border-radius: 0;
+      }
+      padding: 9px 12px;
+      font-size: 16px;
+      font-weight: 700;
+      color: #212221;
+      text-transform: uppercase;
+      font-size: 16px !important;
+      font-weight: 800 !important;
+      font-family: 'Raleway';
     }
-    &:first-child {
-      border-right: 2px solid #c4a66d;
-      border-radius: 0;
-    }
-    &:last-child {
-      border-left: 2px solid #c4a66d;
-      border-radius: 0;
-    }
-    &:nth-child(2) {
-      border-radius: 0;
-    }
-    padding: 9px 12px;
-    font-size: 16px;
-    font-weight: 700;
+    padding: 3px;
   }
+
   #cart-count {
     background: #c0a064;
     font-size: 10px;
@@ -103,15 +120,17 @@
     text-align: center;
     margin-bottom: 20px;
 }
-@media  screen and (min-width: 1368px) {
-
+@media  screen and (min-width: 1368px) and (max-width: 1550px) {
+  .banner-slider {
+    max-width: 100% !important;
+  }
 }
 
 //desktop normal size
 @media  screen and (min-width: 992px) and (max-width: 1367px) {
   //slider full
   .banner-slider {
-    max-width: 100%;
+    max-width: 100% !important;
   }
   .stamps {
     display: flex;
@@ -122,7 +141,7 @@
 @media screen and (min-width: 481px) and (max-width: 991px) {
   //slider full
   .banner-slider {
-    max-width: 100%;
+    max-width: 100% !important;
   }
   .stamps {
     display: flex;
@@ -184,4 +203,18 @@
   }
   background: #c0a064;
   border: 1px solid #9a8151;
+}
+#nav-total {
+  background: #fff;
+  padding-left: 0;
+  padding-right: 0;
+}
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.top-bar__countdown {
+  font-weight: 700 !important;
+  font-size: 13px !important;
+  color: #fff !important;
+  text-transform: none;
 }
