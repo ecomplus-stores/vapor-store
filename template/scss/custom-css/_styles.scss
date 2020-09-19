@@ -191,11 +191,81 @@
   }
   background: #000;
   color: #fff;
+  border-top: 0;
+}
+.prices__value {
+  color: #c0a064;
+}
+#product {
+  & .col {
+    .product__name {
+      order: 1;
+    }
+    .product__rating {
+      order: 2;
+    }
+    .product__prices {
+      order: 3;
+    }
+    .variations {
+      order: 4;
+    }
+    .product__short-stock {
+      order: 5;
+    }
+    .product__buy {
+      order: 6;
+    }
+    .shipping-calculator {
+      order: 7;
+    }
+    .product__sku {
+      order: 8;
+    }
+    .mb-3 {
+      order: 9;
+    }
+    article {
+      order: 10;
+    }
+    display: flex;
+    flex-direction: column;
+  }
+}
+.product__buy button {
+  width: 100%;
 }
 .product-card {
-  &__name, &__prices {
-    text-align: center;
+  &__name{
+    color: #333;
+    text-transform: uppercase;
+    font-weight: 600;
   }
+  &__prices strong {
+    font-size: 25px !important;
+    color: #c0a064;
+  }
+  & .prices {
+    &__installments {
+      & span {
+        &::before {
+          content: 'de'
+        }
+        &::after {
+          content: 'sem juros'
+        }
+    }
+    color: #525252;
+    font-size: 13px
+  }
+    &__discount {
+      & span {
+        font-weight: bold;
+      }
+    }
+  }
+  text-align: center;
+  font-family: 'Open Sans';
 }
 .product__buy button {
   &:hover {

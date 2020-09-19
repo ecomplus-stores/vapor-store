@@ -25,18 +25,6 @@
       "src": "/img/uploads/GoogleSafeBrowsing.png",
       "alt": "Google Safe Browsing",
       "link": "http://www.google.com/safebrowsing/diagnostic?site=www.vaporstore.com.br"
-    },
-    {
-      "src": "/img/uploads/mercadopago-logo.png",
-      "alt": "Aceitamos Mercado Pago"
-    },
-    {
-      "src": "/img/uploads/decred-logo.png",
-      "alt": "Aceitamos Decred"
-    },
-    {
-      "src": "/img/uploads/bit-coin-logo.png",
-      "alt": "Aceitamos Bitcoin"
     }
   ],
   "payment_methods": {
