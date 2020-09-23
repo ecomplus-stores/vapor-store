@@ -4,13 +4,14 @@
     "link": "https://api.whatsapp.com/send?phone=5541992187423"
   },
   "contacts_stripe": {
-    "pages": [
-    ],
+    "pages": [],
     "phone_wpp": false,
     "socials": false
   },
   "categories_list": {
-    "featured": [],
+    "featured": [
+      "/vitrine?Vitrine"
+    ],
     "random": 6,
     "full_width": true
   },
