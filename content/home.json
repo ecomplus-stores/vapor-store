@@ -39,7 +39,7 @@
       "type": "collection-shelf",
       "shuffle": false,
       "collection_id": "5f6b21ea7430f92180f3fb5a:collections:Vitrine:/vitrine",
-      "headless": true,
+      "headless": false,
       "limit": 4,
       "page": 1,
       "sort": "views"
@@ -49,6 +49,38 @@
       "shuffle": false,
       "limit": 4,
       "page": 2,
+      "collection_id": "5f6b21ea7430f92180f3fb5a:collections:Vitrine:/vitrine",
+      "sort": "views"
+    },
+    {
+      "type": "collection-shelf",
+      "shuffle": false,
+      "limit": 4,
+      "page": 3,
+      "collection_id": "5f6b21ea7430f92180f3fb5a:collections:Vitrine:/vitrine",
+      "sort": "views"
+    },
+    {
+      "type": "collection-shelf",
+      "shuffle": false,
+      "limit": 4,
+      "page": 4,
+      "collection_id": "5faf79ba80c6216a3fc5e208:collections:Mais Vendidos:/mais-vendidos",
+      "sort": "views"
+    },
+    {
+      "type": "collection-shelf",
+      "shuffle": false,
+      "limit": 4,
+      "page": 5,
+      "collection_id": "5f6b21ea7430f92180f3fb5a:collections:Vitrine:/vitrine",
+      "sort": "views"
+    },
+    {
+      "type": "collection-shelf",
+      "shuffle": false,
+      "limit": 4,
+      "page": 6,
       "collection_id": "5f6b21ea7430f92180f3fb5a:collections:Vitrine:/vitrine",
       "sort": "views"
     },
