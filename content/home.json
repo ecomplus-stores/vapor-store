@@ -37,11 +37,12 @@
     },
     {
       "type": "collection-shelf",
-      "shuffle": true,
+      "shuffle": false,
       "collection_id": "5f6b21ea7430f92180f3fb5a:collections:Vitrine:/vitrine",
       "headless": true,
-      "limit": 23,
-      "page": 1
+      "limit": 4,
+      "page": 11,
+      "sort": "views"
     },
     {
       "type": "custom-html",
