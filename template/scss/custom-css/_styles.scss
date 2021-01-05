@@ -198,39 +198,6 @@
 }
 #product {
   & .col {
-    .product__name {
-      order: 1;
-    }
-    .product__rating {
-      order: 2;
-    }
-    .product__prices {
-      order: 3;
-    }
-    .variations {
-      order: 4;
-    }
-    .product__short-stock {
-      order: 5;
-    }
-    .product__buy {
-      order: 6;
-    }
-    .shipping-calculator {
-      order: 7;
-    }
-    .product__sku {
-      order: 8;
-    }
-    .mb-3 {
-      order: 9;
-    }
-    article {
-      order: 10;
-    }
-    display: flex;
-    flex-direction: column;
-  }
 }
 .product__buy button {
   width: 100%;
