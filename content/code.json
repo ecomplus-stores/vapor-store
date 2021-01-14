@@ -1,5 +1,5 @@
 {
-  "css": "//Não mostrar ítens sem estoque na vitrine\n.glide__arrows--outer {\n    display: none;\n}\n.products-carousel__title {\n    display: none !important;\n}",
+  "css": "//Não mostrar ítens sem estoque na vitrine\n.glide__arrows--outer {\n    display: none !important;;\n}\n.products-carousel__title {\n    display: none !important;\n}",
   "html_head": "",
   "html_body": ""
 }
