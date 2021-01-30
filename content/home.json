@@ -32,59 +32,6 @@
       ]
     },
     {
-      "type": "info-bar",
-      "enabled": false
-    },
-    {
-      "type": "collection-shelf",
-      "shuffle": true,
-      "collection_id": "5f6b21ea7430f92180f3fb5a:collections:Vitrine:/vitrine",
-      "headless": false,
-      "limit": 4,
-      "page": 1,
-      "sort": "views"
-    },
-    {
-      "type": "collection-shelf",
-      "shuffle": true,
-      "limit": 4,
-      "page": 2,
-      "collection_id": "5f6b21ea7430f92180f3fb5a:collections:Vitrine:/vitrine",
-      "sort": "views"
-    },
-    {
-      "type": "collection-shelf",
-      "shuffle": false,
-      "limit": 4,
-      "page": 3,
-      "collection_id": "5f6b21ea7430f92180f3fb5a:collections:Vitrine:/vitrine",
-      "sort": "views"
-    },
-    {
-      "type": "collection-shelf",
-      "shuffle": true,
-      "limit": 4,
-      "page": 4,
-      "collection_id": "5f6b21ea7430f92180f3fb5a:collections:Vitrine:/vitrine",
-      "sort": "views"
-    },
-    {
-      "type": "collection-shelf",
-      "shuffle": true,
-      "limit": 4,
-      "page": 5,
-      "collection_id": "5f6b21ea7430f92180f3fb5a:collections:Vitrine:/vitrine",
-      "sort": "views"
-    },
-    {
-      "type": "collection-shelf",
-      "shuffle": true,
-      "limit": 4,
-      "page": 6,
-      "collection_id": "5f6b21ea7430f92180f3fb5a:collections:Vitrine:/vitrine",
-      "sort": "views"
-    },
-    {
       "type": "custom-html",
       "html": "<span class=\"titulo-marcas\"><b>REVENDEDOR AUTORIZADO</b><span class=\"subtitulo-marcas\">GARANTIA 100% NO BRASIL! CONFIRA!</span></span>"
     },
