@@ -5,7 +5,7 @@
   },
   "contacts_stripe": {
     "pages": [],
-    "phone_wpp": false,
+    "phone_wpp": true,
     "socials": false
   },
   "categories_list": {
