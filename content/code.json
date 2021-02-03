@@ -1,5 +1,5 @@
 {
-  "css": "//Não mostrar ítens sem estoque na vitrine\n.glide__arrows--outer {\n    display: none !important;;\n}\n.products-carousel__title {\n    display: none !important;\n}\n",
-  "html_head": "",
+  "css": "//Não mostrar ítens sem estoque na vitrine\n.glide__arrows--outer {\n    display: none !important;;\n}\n.products-carousel__title {\n    display: none !important;\n}\n.__pages_em-manutencao .header,\n.__pages_em-manutencao .footer {\n    display: none !important;\n}",
+  "html_head": "<script>\nif (location.pathname !== '/pages/em-manutencao') {\n  location.href = 'https://vaporstore.com.br';\n}\n</script>",
   "html_body": ""
 }
