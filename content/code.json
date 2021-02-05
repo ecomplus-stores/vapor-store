@@ -1,5 +1,5 @@
 {
-  "css": "//Não mostrar ítens sem estoque na vitrine\n.glide__arrows--outer {\n    display: none !important;;\n}\n.products-carousel__title {\n    display: none !important;\n}\n.product__buy, .product-card__buy {\n  display: none;\n}\n#product-actions .product__prices::after {\n  content: \"NÃO ENVIAMOS PARA REGIÃO NORTE E ZONAS RURAIS,DESCULPE\";\n  display: block !important;\n  padding: 10px;\n  color: #fff;\n  background: red;\n  text-transform: uppercase;\n}",
+  "css": "//Não mostrar ítens sem estoque na vitrine\n.glide__arrows--outer {\n    display: none !important;;\n}\n.products-carousel__title {\n    display: none !important;\n}\n.product__buy, .product-card__buy {\n \n}\n#product-actions .product__prices::after {\n  content: \"NÃO ENVIAMOS PARA REGIÃO NORTE E ZONAS RURAIS,DESCULPE\";\n  display: block !important;\n  padding: 10px;\n  color: #fff;\n  background: red;\n  text-transform: uppercase;\n}",
   "html_head": "",
   "html_body": ""
 }
