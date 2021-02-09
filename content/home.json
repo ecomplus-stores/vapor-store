@@ -24,10 +24,10 @@
           "end": ""
         },
         {
-          "img": "/img/uploads/banner-trustvox-opinioes-vaporstore.png",
-          "alt": "opinioes",
           "start": "",
-          "end": ""
+          "end": "",
+          "img": "/img/uploads/banner_opinioes_vaporstore.png",
+          "link": "https://certificados.trustvox.com.br/vaporstore"
         }
       ]
     },
