@@ -46,3 +46,9 @@
   for = "/assets/*"
   [headers.values]
     Cache-Control = "public, max-age=86400, s-maxage=600"
+    
+    [[redirects]]
+from = “/pagina/politicas-de-garantia-reembolso-e-devolucao”
+to = “pages/politica-de-garantia-reembolso-e-devolucao”
+status = 301
+force=true
