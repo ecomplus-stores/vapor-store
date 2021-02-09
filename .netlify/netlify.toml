@@ -48,7 +48,7 @@
     Cache-Control = "public, max-age=86400, s-maxage=600"
     
     [[redirects]]
-from = “https://www.vaporstore.com.br/pagina/politicas-de-garantia-reembolso-e-devolucao”
-to = “https://www.vaporstore.com.br/pages/politica-de-garantia-reembolso-e-devolucao”
+from = “/pagina/politicas-de-garantia-reembolso-e-devolucao”
+to = “/pages/politica-de-garantia-reembolso-e-devolucao”
 status = 301
 force=true
