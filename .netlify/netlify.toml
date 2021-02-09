@@ -3,7 +3,7 @@
 from = "/pagina/politicas-de-garantia-reembolso-e-devolucao"
 to = "/pages/politica-de-garantia-reembolso-e-devolucao"
 status = 301
-force=true
+force = true
 
 [build]
   publish = "publish"
