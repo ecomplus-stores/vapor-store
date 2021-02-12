@@ -1,15 +1,16 @@
 {
-  "pkg": "@ecomplus/widget-trustvox",
-  "active": false,
+  "productSlots": "src/append/product-slots",
+  "active": true,
+  "productDescriptionAppend": "src/append/product-block",
   "desktopOnly": false,
   "enableCheckout": false,
-  "disablePages": true,
-  "options": {
-    "trustvoxStoreId": ""
-  },
-  "bodyAppend": "src/append/body",
-  "productDescriptionAppend": "src/append/product-block",
+  "stampsAppend": "src/append/stamps",
+  "pkg": "@ecomplus/widget-trustvox",
   "productCardSlots": "src/append/product-card-slots",
-  "productSlots": "src/append/product-slots",
-  "stampsAppend": "src/append/stamps"
+  "disablePages": true,
+  "bodyAppend": "src/append/body",
+  "options": {
+    "trustvoxStoreId": 1645,
+    "widgetSrc": "https://static.trustvox.com.br/sincero/sincero.js"
+  }
 }
