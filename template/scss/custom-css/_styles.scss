@@ -254,3 +254,7 @@ body {
   color: #fff !important;
   text-transform: none;
 }
+//Esconder botão de cancelamento de pedido
+.order-info__toggle {
+    display: none !important;
+}
