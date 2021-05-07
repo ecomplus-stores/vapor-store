@@ -1,9 +1,9 @@
 {
   "pkg": "@ecomplus/widget-offers-notification",
-  "active": false,
+  "active": true,
   "desktopOnly": false,
   "options": {
-    "enableOutOfStock": false,
+    "enableOutOfStock": true,
     "enablePriceChange": false,
     "popupOptions": "location=yes,height=400,width=320,status=yes"
   },
