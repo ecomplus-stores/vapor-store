@@ -73,6 +73,11 @@
       "headless": true
     },
     {
+      "type": "dynamic-showcase",
+      "load_more": true,
+      "sort": "sales"
+    },
+    {
       "type": "collection-shelf",
       "shuffle": true,
       "limit": 4,
