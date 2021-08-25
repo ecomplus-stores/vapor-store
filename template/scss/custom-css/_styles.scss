@@ -251,3 +251,11 @@ body {
 .order-info__toggle {
     display: none !important;
 }
+// full banner
+@media(min-width: 767px) {
+  .banner-slider {
+    max-width: 100%;
+    height: auto;
+    --banner-aspect-ratio: 1 !important;
+  }
+}
