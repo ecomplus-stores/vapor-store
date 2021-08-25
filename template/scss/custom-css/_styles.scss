@@ -143,8 +143,16 @@
 }
 // apenas mobile
 @media screen and (max-width: 480px) {
-  .banners-grid:last-child > .container > .row > .col-12 {
+  .banners-grid {
+    &:last-child > .container > .row > .col-12 {
       flex: 0 0 50% !important;
+    }
+    &:first-child > .container > .row > .col-12 {
+      margin-bottom: 0;
+      & .banner {
+        min-height: 0
+      }
+    }
   }
   .stamps {
     overflow-x: scroll;
