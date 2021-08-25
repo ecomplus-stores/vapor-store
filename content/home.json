@@ -82,11 +82,6 @@
       "headless": true
     },
     {
-      "type": "dynamic-showcase",
-      "load_more": false,
-      "sort": "sales"
-    },
-    {
       "type": "custom-html",
       "html": "<span class=\"titulo-marcas\"><b>REVENDEDOR AUTORIZADO</b><span class=\"subtitulo-marcas\">GARANTIA 100% NO BRASIL! CONFIRA!</span></span>"
     },
