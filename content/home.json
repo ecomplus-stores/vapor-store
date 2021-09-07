@@ -123,7 +123,8 @@
       "shuffle": true,
       "limit": 4,
       "page": 7,
-      "sort": "views"
+      "sort": "views",
+      "collection_id": "60152a2bd6981740b49de819:collections:Vitrine:/vitrine"
     }
   ]
 }
