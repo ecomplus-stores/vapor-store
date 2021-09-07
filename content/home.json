@@ -117,6 +117,13 @@
           "link": ""
         }
       ]
+    },
+    {
+      "type": "collection-shelf",
+      "shuffle": true,
+      "limit": 4,
+      "page": 7,
+      "sort": "views"
     }
   ]
 }
