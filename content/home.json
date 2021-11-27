@@ -92,7 +92,8 @@
       "limit": 4,
       "page": 6,
       "collection_id": "60152a2bd6981740b49de819:collections:Vitrine:/vitrine",
-      "sort": "views"
+      "sort": "views",
+      "headless": true
     },
     {
       "type": "collection-shelf",
@@ -100,7 +101,8 @@
       "limit": 4,
       "page": 7,
       "sort": "views",
-      "collection_id": "60152a2bd6981740b49de819:collections:Vitrine:/vitrine"
+      "collection_id": "60152a2bd6981740b49de819:collections:Vitrine:/vitrine",
+      "headless": true
     },
     {
       "type": "custom-html",
