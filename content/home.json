@@ -17,11 +17,6 @@
       "autoplay": 2000,
       "slides": [
         {
-          "start": "",
-          "end": "",
-          "img": "/img/uploads/jpg_banner_bf_vaporstore_extendida.jpg"
-        },
-        {
           "img": "/img/uploads/banner-davinci-vaporstore.jpg",
           "link": "/",
           "alt": "Davinci",
