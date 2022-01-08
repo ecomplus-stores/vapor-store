@@ -17,13 +17,6 @@
       "autoplay": 2000,
       "slides": [
         {
-          "img": "/img/uploads/frete_gratis_vaporstore.jpg",
-          "link": "/",
-          "alt": "",
-          "start": "",
-          "end": ""
-        },
-        {
           "start": "",
           "end": "",
           "img": "/img/uploads/jpg_banner_xvape_xmax_garantia_vaporstore_brasil.jpg"
@@ -39,7 +32,8 @@
           "end": "2021-12-24T21:09:59.524Z",
           "img": "/img/uploads/banner_frete_gratis_vaporstore.jpg"
         }
-      ]
+      ],
+      "full_width": true
     },
     {
       "type": "collection-shelf",
