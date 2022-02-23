@@ -17,6 +17,11 @@
       "autoplay": 2000,
       "slides": [
         {
+          "start": "2022-02-23T11:07:55.508Z",
+          "end": "2022-03-03T02:59:39.344Z",
+          "img": "/img/uploads/banner_carnaval_vapor_2022.jpg"
+        },
+        {
           "start": "",
           "end": "",
           "img": "/img/uploads/jpg_banner_xvape_xmax_garantia_vaporstore_brasil.jpg"
@@ -31,11 +36,6 @@
           "start": "2021-12-24T21:09:59.475Z",
           "end": "2021-12-24T21:09:59.524Z",
           "img": "/img/uploads/banner_frete_gratis_vaporstore.jpg"
-        },
-        {
-          "start": "2022-02-23T11:07:55.508Z",
-          "end": "2022-03-03T02:59:39.344Z",
-          "img": "/img/uploads/banner_carnaval_vapor_2022.jpg"
         }
       ],
       "full_width": true
