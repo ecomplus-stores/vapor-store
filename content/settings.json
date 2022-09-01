@@ -1,23 +1,24 @@
 {
-  "store_id": 1138,
-  "name": "VaporStore -  Envios do BRASIL",
-  "repository": "ecomplus-stores/vapor-store",
   "domain": "www.vaporstore.com.br",
-  "short_name": "VaporStore",
-  "description": "Loja especializada em Vaporizadores de Ervas e acessórios destinados a aromaterapia. Trabalhamos exclusivamente com produtos originais. Garantia assegurada! Seu novo vaporizador pode ser portátil ou de mesa. Pagamento facilitado a vista com 10% de desconto ou em até 12x sem juros no cartão. Somos revenda autorizada da Arizer, Boundless, Da Vinci e Vapir. Trabalhamos também com Pax, Mighty, Volcano, Firefly, Flowermate e Xvape Fog.",
+  "currency_symbol": "R$",
   "primary_color": "#313131",
-  "secondary_color": "#e36159",
-  "bg_color": "#fff",
   "theme": {
-    "bootswatch": "_"
+    "bootswatch": "_",
+    "custom": "_"
   },
+  "bg_color": "#fff",
+  "repository": "ecomplus-stores/vapor-store",
   "logo": "/img/uploads/logo.png",
-  "mini_logo": "",
-  "icon": "/img/icon.png",
-  "large_icon": "/img/large-icon.png",
-  "favicon": "/img/uploads/favicon.png",
+  "name": "VaporStore -  Envios do BRASIL",
+  "short_name": "VaporStore",
   "lang": "pt_br",
   "currency": "BRL",
-  "currency_symbol": "R$",
-  "country_code": "BR"
+  "mini_logo": "",
+  "favicon": "/img/uploads/favicon.png",
+  "country_code": "BR",
+  "secondary_color": "#e36159",
+  "icon": "/img/icon.png",
+  "store_id": 1138,
+  "description": "Loja especializada em aparelhos para materiais secos e acessórios. Trabalhamos exclusivamente com produtos originais. Garantia assegurada! Seu novo aparelho pode ser portátil ou de mesa. Pagamento facilitado a vista com 10% de desconto ou em até 12x sem juros no cartão. Somos revenda autorizada da Arizer, Boundless, Da Vinci e Vapir. Trabalhamos também com Pax, Mighty, Volcano, Firefly, Flowermate e Xvape Fog.",
+  "large_icon": "/img/large-icon.png"
 }
