@@ -102,6 +102,14 @@
       "sort": "views"
     },
     {
+      "type": "collection-shelf",
+      "shuffle": true,
+      "limit": 4,
+      "page": 9,
+      "collection_id": "60152a2bd6981740b49de819:collections:Vitrine:/vitrine",
+      "sort": "views"
+    },
+    {
       "type": "custom-html",
       "html": "<span class=\"titulo-marcas\"><b>REVENDEDOR AUTORIZADO</b><span class=\"subtitulo-marcas\">GARANTIA 100% NO BRASIL! CONFIRA!</span></span>"
     },
