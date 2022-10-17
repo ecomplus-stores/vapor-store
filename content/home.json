@@ -94,6 +94,12 @@
       "headless": true
     },
     {
+      "type": "collection-shelf",
+      "shuffle": false,
+      "limit": 12,
+      "page": 1
+    },
+    {
       "type": "custom-html",
       "html": "<span class=\"titulo-marcas\"><b>REVENDEDOR AUTORIZADO</b><span class=\"subtitulo-marcas\">GARANTIA 100% NO BRASIL! CONFIRA!</span></span>"
     },
