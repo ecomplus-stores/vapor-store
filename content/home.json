@@ -97,7 +97,7 @@
       "type": "collection-shelf",
       "shuffle": false,
       "limit": 4,
-      "page": 1,
+      "page": 8,
       "collection_id": "60152a2bd6981740b49de819:collections:Vitrine:/vitrine",
       "sort": "slug"
     },
