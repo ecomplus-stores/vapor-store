@@ -32,20 +32,20 @@
     },
     {
       "type": "collection-shelf",
-      "shuffle": false,
+      "shuffle": true,
       "limit": 4,
       "page": 1,
-      "collection_id": "60126784d6981740b49baa70:brands:Arizer :/marca/aparelhos-arizer",
-      "sort": "slug",
+      "collection_id": "60152a2bd6981740b49de819:collections:Vitrine:/vitrine",
+      "sort": "views",
       "headless": true
     },
     {
       "type": "collection-shelf",
-      "shuffle": false,
+      "shuffle": true,
       "limit": 4,
       "page": 2,
-      "collection_id": "60126785d6981740b49baa72:brands:Boundless:/marca/boundless",
-      "sort": "slug",
+      "collection_id": "60152a2bd6981740b49de819:collections:Vitrine:/vitrine",
+      "sort": "views",
       "headless": true
     },
     {
@@ -54,52 +54,52 @@
       "limit": 4,
       "page": 3,
       "collection_id": "60152a2bd6981740b49de819:collections:Vitrine:/vitrine",
-      "sort": "slug",
+      "sort": "views",
       "headless": true
     },
     {
       "type": "collection-shelf",
-      "shuffle": false,
+      "shuffle": true,
       "limit": 4,
       "page": 4,
       "collection_id": "60152a2bd6981740b49de819:collections:Vitrine:/vitrine",
-      "sort": "slug",
+      "sort": "views",
       "headless": true
     },
     {
       "type": "collection-shelf",
-      "shuffle": false,
+      "shuffle": true,
       "limit": 4,
       "page": 5,
       "collection_id": "60152a2bd6981740b49de819:collections:Vitrine:/vitrine",
-      "sort": "slug",
+      "sort": "sales",
       "headless": true
     },
     {
       "type": "collection-shelf",
-      "shuffle": false,
+      "shuffle": true,
       "limit": 4,
       "page": 6,
       "collection_id": "60152a2bd6981740b49de819:collections:Vitrine:/vitrine",
-      "sort": "slug",
+      "sort": "views",
       "headless": false
     },
     {
       "type": "collection-shelf",
-      "shuffle": false,
+      "shuffle": true,
       "limit": 4,
       "page": 7,
-      "sort": "slug",
+      "sort": "views",
       "collection_id": "60152a2bd6981740b49de819:collections:Vitrine:/vitrine",
       "headless": true
     },
     {
       "type": "collection-shelf",
-      "shuffle": false,
+      "shuffle": true,
       "limit": 4,
       "page": 8,
       "collection_id": "60152a2bd6981740b49de819:collections:Vitrine:/vitrine",
-      "sort": "slug"
+      "sort": "views"
     },
     {
       "type": "custom-html",
