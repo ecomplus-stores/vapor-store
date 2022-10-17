@@ -81,7 +81,7 @@
       "limit": 4,
       "page": 6,
       "collection_id": "60152a2bd6981740b49de819:collections:Vitrine:/vitrine",
-      "sort": "views",
+      "sort": "slug",
       "headless": true
     },
     {
