@@ -17,6 +17,11 @@
       "autoplay": 3500,
       "slides": [
         {
+          "start": "2022-10-21T20:57:18.828Z",
+          "end": "2022-10-30T20:56:55.597Z",
+          "img": "/img/uploads/banner-vapor-esquenta-black-friday-2022.png"
+        },
+        {
           "start": "",
           "end": "",
           "img": "/img/uploads/jpg_banner_xvape_xmax_garantia_vaporstore_brasil.jpg"
@@ -26,11 +31,6 @@
           "end": "",
           "img": "/img/uploads/banner_opinioes_vaporstore.jpg",
           "link": "https://certificados.trustvox.com.br/vaporstore"
-        },
-        {
-          "start": "2022-10-21T20:57:18.828Z",
-          "end": "2022-10-30T20:56:55.597Z",
-          "img": "/img/uploads/banner-vapor-esquenta-black-friday-2022.png"
         }
       ],
       "full_width": true
