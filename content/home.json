@@ -17,16 +17,16 @@
       "autoplay": 3500,
       "slides": [
         {
-          "start": "",
-          "end": "",
-          "img": "/img/uploads/banner-trustvox-opinioes-vaporstore.png",
-          "link": "https://certificados.trustvox.com.br/vaporstore"
-        },
-        {
           "start": "2022-12-05T06:11:28.522Z",
           "end": "2022-12-05T06:11:33.918Z",
           "img": "/img/uploads/vapor-banner-davinci.jpg",
           "link": "https://www.vaporstore.com.br/marca/davinci"
+        },
+        {
+          "start": "",
+          "end": "",
+          "img": "/img/uploads/banner-trustvox-opinioes-vaporstore.png",
+          "link": "https://certificados.trustvox.com.br/vaporstore"
         }
       ],
       "full_width": true
