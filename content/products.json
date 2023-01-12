@@ -4,13 +4,7 @@
       "type": "banner-slider",
       "autoplay": 0,
       "full_width": true,
-      "slides": [
-        {
-          "start": "",
-          "end": "",
-          "img": "/img/uploads/vaporstore_natal_2022.png"
-        }
-      ]
+      "slides": []
     },
     {
       "type": "breadcrumbs",
