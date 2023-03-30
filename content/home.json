@@ -17,16 +17,9 @@
       "autoplay": 3500,
       "slides": [
         {
-          "start": "2022-12-05T06:11:28.522Z",
-          "img": "/img/uploads/vapor-banner-davinci.jpg",
-          "link": "https://www.vaporstore.com.br/marca/davinci",
-          "end": ""
-        },
-        {
           "start": "",
           "end": "",
-          "img": "/img/uploads/jpg_banner_xvape_xmax_garantia_vaporstore_brasil.jpg",
-          "link": "http://vaporstore.com.brmarca/aparelhos-xvape"
+          "img": "/img/uploads/banner_pagamento_pix_boleto.jpg"
         },
         {
           "start": "",
