@@ -39,8 +39,8 @@
   "dependencies": {
     "@ecomplus/storefront-template": "^2.0.0-beta.220",
     "@netlify/zip-it-and-ship-it": "^5.13.5",
-    "firebase-tools": "^11.25.1",
-    "lottie-web": "^5.10.2"
+    "firebase-tools": "^11.25.3",
+    "lottie-web": "^5.11.0"
   },
   "devDependencies": {
     "browser-sync": "^2.29.1"
