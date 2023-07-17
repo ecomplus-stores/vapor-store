@@ -21,7 +21,15 @@ const maintenance = _.cms('maintenance') || {}
         <section class="maintenance__logo mb-5">
           <%- await include('@/layout/inc/logo', { _ }) %>
         </section>
-  
+        <!-- MailerLite Universal -->
+        <script>
+          (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+          .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+          n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+          (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+          ml('account', '513081');
+        </script>
+        <!-- End MailerLite Universal -->
         <section class="maintenance__title">
           <% if (maintenance && maintenance.title) { %>
             <h1>
@@ -35,6 +43,7 @@ const maintenance = _.cms('maintenance') || {}
               <%- _.md.render(maintenance.body) %>
             <% } %>
           </div>
+          <div class="ml-embedded" data-form="luK27X"></div>
         </section>
   
         <section class="maintenance__contacts">
@@ -48,15 +57,6 @@ const maintenance = _.cms('maintenance') || {}
   
       <footer>
         <%- await include('@/layout/inc/ecom-credits') %>
-        <!-- MailerLite Universal -->
-        <script>
-          (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
-          .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
-          n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
-          (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
-          ml('account', '513081');
-        </script>
-        <!-- End MailerLite Universal -->
       </footer>
     </body>
   <% } %>
