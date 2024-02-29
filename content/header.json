@@ -1,11 +1,11 @@
 {
   "marketing_stripe": {
-    "text": "Novo WhatsApp - (41) 99218-7423",
-    "link": "https://api.whatsapp.com/send?phone=5541992187423"
+    "text": "",
+    "link": ""
   },
   "contacts_stripe": {
     "pages": [],
-    "phone_wpp": true,
+    "phone_wpp": false,
     "socials": false
   },
   "categories_list": {
