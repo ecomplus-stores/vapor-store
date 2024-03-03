@@ -15,8 +15,8 @@
   },
   "contacts": {
     "title": "Atendimento",
-    "phone_wpp": true,
-    "socials": true,
+    "phone_wpp": false,
+    "socials": false,
     "email": true,
     "address": true
   },
@@ -28,20 +28,21 @@
     }
   ],
   "payment_methods": {
-    "bb": true,
-    "visa": true,
-    "boleto": true,
+    "bb": false,
+    "visa": false,
+    "boleto": false,
     "aura": false,
     "banrisul": false,
-    "elo": true,
+    "elo": false,
     "hipercard": false,
     "hsbc": false,
-    "bradesco": true,
+    "bradesco": false,
     "santander": false,
-    "mastercard": true,
+    "mastercard": false,
     "citibank": false,
     "mais": false,
-    "itau": true
+    "pix": true,
+    "itau": false
   },
   "credits": "VaporStore - © 2020 Todos os direitos reservados "
 }
