@@ -4,11 +4,7 @@
   "sections": [
     {
       "type": "banners-grid",
-      "banners": [
-        {
-          "img": "/img/uploads/banner_tarja_3x_sem_juros.jpg"
-        }
-      ]
+      "banners": []
     },
     {
       "type": "banner-slider",
