@@ -41,7 +41,7 @@
     "mastercard": false,
     "citibank": false,
     "mais": false,
-    "pix": true,
+    "pix": false,
     "itau": false
   },
   "credits": "VaporStore - © 2024 Todos os direitos reservados "
