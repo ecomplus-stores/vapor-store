@@ -2,30 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
     <url>
-      <loc>https://www.vaporstore.com.br/vaporizadores/</loc>
-      <changefreq>weekly</changefreq>
-      <priority>0.8</priority>
-    </url>
-  
-    <url>
-      <loc>https://www.vaporstore.com.br/acessorios/</loc>
-      <changefreq>weekly</changefreq>
-      <priority>0.8</priority>
-    </url>
-  
-    <url>
-      <loc>https://www.vaporstore.com.br/seminovos/</loc>
-      <changefreq>weekly</changefreq>
-      <priority>0.8</priority>
-    </url>
-  
-    <url>
-      <loc>https://www.vaporstore.com.br/outlet</loc>
-      <changefreq>weekly</changefreq>
-      <priority>0.8</priority>
-    </url>
-  
-    <url>
       <loc>https://www.vaporstore.com.br/espacadores-davinci-iq</loc>
       <changefreq>weekly</changefreq>
       <priority>0.9</priority>
@@ -3038,6 +3014,30 @@
     </url>
   
     <url>
+      <loc>https://www.vaporstore.com.br/vaporizadores/</loc>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+    </url>
+  
+    <url>
+      <loc>https://www.vaporstore.com.br/acessorios/</loc>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+    </url>
+  
+    <url>
+      <loc>https://www.vaporstore.com.br/seminovos/</loc>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+    </url>
+  
+    <url>
+      <loc>https://www.vaporstore.com.br/outlet</loc>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+    </url>
+  
+    <url>
       <loc>https://www.vaporstore.com.br/mais-vendidos</loc>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
@@ -3230,13 +3230,13 @@
     </url>
   
     <url>
-      <loc>https://www.vaporstore.com.br/pages/entrega</loc>
+      <loc>https://www.vaporstore.com.br/pages/politica-de-garantia-reembolso-e-devolucao</loc>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
     </url>
   
     <url>
-      <loc>https://www.vaporstore.com.br/pages/politica-de-garantia-reembolso-e-devolucao</loc>
+      <loc>https://www.vaporstore.com.br/pages/entrega</loc>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
     </url>
@@ -3248,13 +3248,13 @@
     </url>
   
     <url>
-      <loc>https://www.vaporstore.com.br/pages/termos</loc>
+      <loc>https://www.vaporstore.com.br/pages/trocas</loc>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
     </url>
   
     <url>
-      <loc>https://www.vaporstore.com.br/pages/trocas</loc>
+      <loc>https://www.vaporstore.com.br/pages/termos</loc>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
     </url>
