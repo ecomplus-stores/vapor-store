@@ -101,31 +101,6 @@
     {
       "type": "custom-html",
       "html": "<span class=\"titulo-marcas\"><b>REVENDEDOR AUTORIZADO</b><span class=\"subtitulo-marcas\">GARANTIA 100% NO BRASIL! CONFIRA!</span></span>"
-    },
-    {
-      "type": "banners-grid",
-      "banners": [
-        {
-          "img": "/img/uploads/davinci.png",
-          "alt": "Davinci",
-          "link": ""
-        },
-        {
-          "img": "/img/uploads/boundless.png",
-          "alt": "Boundless",
-          "link": ""
-        },
-        {
-          "img": "/img/uploads/vapir.png",
-          "alt": "Vapir",
-          "link": ""
-        },
-        {
-          "img": "/img/uploads/arizer.png",
-          "alt": "Arizer",
-          "link": ""
-        }
-      ]
     }
   ]
 }
