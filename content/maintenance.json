@@ -1,6 +1,6 @@
 {
-  "active": false,
-  "title": "NAO DEVERIA ESTAR EM MANUTENCAO",
-  "body": "NAO DEVERIA ESTAR EM MANUTENCAO",
+  "active": true,
+  "title": "FECHADA ",
+  "body": "FECHADA",
   "unlock_key": ""
 }
