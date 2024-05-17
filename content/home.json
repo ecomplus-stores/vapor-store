@@ -97,7 +97,10 @@
       "page": 9,
       "collection_id": "60152a2bd6981740b49de819:collections:Vitrine:/vitrine",
       "sort": "views"
-     },
+    },
     {
+      "type": "custom-html",
+      "html": ""
+    }
   ]
 }
