@@ -282,3 +282,7 @@ body {
   right: 10px;
   top: 10px;
 }
+// hide add to checkout
+.card-footer .minicart__btn-checkout.btn.btn-block.btn-primary {
+    display: none !important;
+}
