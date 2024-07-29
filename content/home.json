@@ -1,5 +1,10 @@
 {
   "meta_title": "VaporStore -  Os melhores aparelhos!",
   "meta_description": "",
-  "sections": []
+  "sections": [
+    {
+      "type": "custom-html",
+      "html": "<html>\n<head>\n    <title>Under Construction</title>\n</head>\n<body>\n    <h1>Under Construction</h1>\n</body>\n</html>"
+    }
+  ]
 }
