@@ -9,6 +9,10 @@
       "title": "VaporStore -  Os melhores aparelhos!"
     },
     {
+      "type": "responsive-banner",
+      "img": "/img/uploads/banner-trustvox-opinioes-vaporstore.png"
+    },
+    {
       "type": "shelfs-nav",
       "shuffle": true,
       "limit": 12,
