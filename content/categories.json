@@ -5,7 +5,8 @@
       "enabled": true
     },
     {
-      "type": "page-title"
+      "type": "page-title",
+      "title": "VaporStore -  Os melhores aparelhos!"
     },
     {
       "type": "document-banner",
