@@ -11,7 +11,7 @@
     {
       "type": "shelfs-nav",
       "shuffle": true,
-      "limit": 4,
+      "limit": 12,
       "page": 1,
       "collection_ids": [
         "60152a2bd6981740b49de819:collections:Vitrine:/vitrine"
