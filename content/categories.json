@@ -9,6 +9,15 @@
       "title": "VaporStore -  Os melhores aparelhos!"
     },
     {
+      "type": "shelfs-nav",
+      "shuffle": true,
+      "limit": 4,
+      "page": 1,
+      "collection_ids": [
+        "60152a2bd6981740b49de819:collections:Vitrine:/vitrine"
+      ]
+    },
+    {
       "type": "document-banner",
       "enabled": true
     },
