@@ -9,11 +9,7 @@
     "socials": false
   },
   "categories_list": {
-    "featured": [
-      "/outlet?OUTLET",
-      "/vaporizadores/?Aparelhos",
-      "/acessorios/?Acessórios"
-    ],
+    "featured": [],
     "random": 0,
     "full_width": true
   },
