@@ -34,10 +34,10 @@
     {
       "type": "shelfs-nav",
       "shuffle": true,
-      "limit": 8,
+      "limit": 12,
       "page": 1,
       "collection_ids": [
-        "6012679bd6981740b49baaa0:categories:Acessorios:/acessorios/"
+        "66919a93f4e6d85ab2cf9c6d:categories:Trituradores:/trituradores"
       ],
       "sort": "sales"
     },
