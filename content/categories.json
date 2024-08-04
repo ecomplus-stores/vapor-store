@@ -18,9 +18,9 @@
       "limit": 12,
       "page": 1,
       "collection_ids": [
-        "60152a2bd6981740b49de819:collections:Vitrine:/vitrine",
         "6012679ad6981740b49baa9e:categories:Aparelhos:/vaporizadores/"
-      ]
+      ],
+      "sort": "highest_price"
     },
     {
       "type": "shelfs-nav",
