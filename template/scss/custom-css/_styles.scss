@@ -286,3 +286,7 @@ body {
 .minicart__btn-checkout, .cart__btn-checkout {
     display: none;
 }
+
+.card-footer .minicart__btn-checkout.btn.btn-block.btn-primary {
+  display: none !important;
+}
