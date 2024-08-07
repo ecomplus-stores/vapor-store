@@ -1,6 +1,11 @@
 {
   "hosting": {
     "redirects": [
+      {
+        "source": "/loja",
+        "destination": "/home",
+        "type": 301
+      }
     ],
     "public": "dist",
     "ignore": [
