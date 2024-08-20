@@ -25,6 +25,16 @@
     {
       "type": "shelfs-nav",
       "shuffle": true,
+      "limit": 9,
+      "page": 1,
+      "collection_ids": [
+        "66c3961a86679971c64a46c6:categories:Aparelhos 2:/aparelhos-2"
+      ],
+      "sort": "sales"
+    },
+    {
+      "type": "shelfs-nav",
+      "shuffle": true,
       "limit": 12,
       "page": 1,
       "collection_ids": [
