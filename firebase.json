@@ -2,8 +2,8 @@
   "hosting": {
     "redirects": [
       {
-        "source": "/loja",
-        "destination": "/home",
+        "source": "/home",
+        "destination": "/loja",
         "type": 301
       }
     ],
