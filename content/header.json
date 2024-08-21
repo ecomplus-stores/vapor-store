@@ -13,5 +13,6 @@
     "random": 0,
     "full_width": true
   },
-  "search_input": true
+  "search_input": true,
+  "popup": "/img/uploads/pop_up.jpg"
 }
