@@ -1,188 +1,188 @@
 <div class="login-modal">
-    <a-backdrop
-      :is-visible="isVisible"
-      @hide="hide"
-    />
-  
-    <transition
-      enter-active-class="animated zoomIn"
-      leave-active-class="animated fadeOutUp slow"
+  <a-backdrop
+    :is-visible="isVisible"
+    @hide="hide"
+  />
+
+  <transition
+    enter-active-class="animated zoomIn"
+    leave-active-class="animated fadeOutUp slow"
+  >
+    <div
+      class="login-modal__box card"
+      v-show="isVisible"
     >
-      <div
-        class="login-modal__box card"
-        v-show="isVisible"
-      >
-        <slot name="header">
-          <div class="login-modal__header card-header">
-            {{ greetings }}
-            <button
-              type="button"
-              class="close"
-              :aria-label="i19close"
-              @click="hide"
+      <slot name="header">
+        <div class="login-modal__header card-header">
+          {{ greetings }}
+          <button
+            type="button"
+            class="close"
+            :aria-label="i19close"
+            @click="hide"
+          >
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+      </slot>
+
+      <div class="login-modal__body card-body">
+        <div
+          v-if="hasLoginError"
+          class="alert alert-warning"
+          role="alert"
+        >
+          {{ i19loginErrorMsg }}
+        </div>
+
+        <transition-group
+          enter-active-class="animated fadeIn"
+          leave-active-class="animated position-absolute fadeOut faster"
+        >
+          <div
+            v-if="isLoading"
+            key="waiting"
+          >
+            <div
+              class="spinner-border m-3"
+              role="status"
             >
-              <span aria-hidden="true">&times;</span>
+              <span class="sr-only">Loading...</span>
+            </div>
+          </div>
+
+          <div
+            v-else-if="isLogged"
+            key="logged"
+          >
+            <div class="list-group list-group-flush">
+              <a-link
+                :href="ordersUrl"
+                class="list-group-item list-group-item-action"
+              >
+                {{ i19myOrders }}
+              </a-link>
+              <a-link
+                :href="accountUrl"
+                class="list-group-item list-group-item-action"
+              >
+                {{ i19myAccount }}
+              </a-link>
+              <a-link
+                :href="favoritesUrl"
+                class="list-group-item list-group-item-action"
+              >
+                {{ i19myFavorites }}
+              </a-link>
+            </div>
+
+            <button
+              class="login-modal__logout btn btn-block btn-danger"
+              type="button"
+              @click="logout"
+            >
+              <i class="i-sign-out"></i>
+              {{ i19logout }}
             </button>
           </div>
-        </slot>
-  
-        <div class="login-modal__body card-body">
+
           <div
-            v-if="hasLoginError"
-            class="alert alert-warning"
-            role="alert"
+            v-else-if="!isLoginForm"
+            key="oauth"
           >
-            {{ i19loginErrorMsg }}
+            <div
+              v-if="!isWaitingPopup && hasNoProfileFound"
+              class="alert alert-info"
+              role="alert"
+            >
+              {{ i19noProfileFoundWithEmail }}
+              <b>{{ email }}</b>.
+              <br>
+              <a
+                href="#"
+                class="alert-link"
+                @click.prevent="hasNoProfileFound = false"
+              >
+                {{ i19signInWithAnotherEmail }}
+              </a>
+            </div>
+
+            <a-alert
+              :can-show="isWaitingPopup"
+              variant="info"
+            >
+              {{ i19continueLoginOnPopup }}.
+            </a-alert>
+
+            <button
+              v-for="({ link, faIcon, providerName, provider }) in oauthProviders"
+              type="button"
+              class="login-modal__btn btn btn-block"
+              :key="provider"
+              :class="`login-modal__btn--${provider}`"
+              @click="openOauthPopup(link, provider)"
+            >
+              <span class="login-modal__btn-icon">
+                <i :class="`fab ${faIcon}`"></i>
+              </span>
+              {{ hasNoProfileFound ? i19signUpWith : i19signInWith }}
+              {{ providerName }}
+            </button>
+
+            <button
+              v-if="!hasNoProfileFound"
+              type="button"
+              class="login-modal__btn btn btn-block btn-secondary"
+              key="email"
+              @click="isLoginForm = true"
+            >
+              <span class="login-modal__btn-icon">
+                <i class="i-envelope"></i>
+              </span>
+              {{ `${i19signInWith} ${i19email}` }}
+            </button>
+            <div class="login-modal__visitor-info">
+              Não tem conta?
+              <a href="/app/#/account/">Comece aqui</a>
+            </div>
           </div>
-  
-          <transition-group
-            enter-active-class="animated fadeIn"
-            leave-active-class="animated position-absolute fadeOut faster"
+
+          <div
+            v-else
+            key="form"
           >
-            <div
-              v-if="isLoading"
-              key="waiting"
-            >
-              <div
-                class="spinner-border m-3"
-                role="status"
-              >
-                <span class="sr-only">Loading...</span>
-              </div>
-            </div>
-  
-            <div
-              v-else-if="isLogged"
-              key="logged"
-            >
-              <div class="list-group list-group-flush">
-                <a-link
-                  :href="ordersUrl"
-                  class="list-group-item list-group-item-action"
-                >
-                  {{ i19myOrders }}
-                </a-link>
-                <a-link
-                  :href="accountUrl"
-                  class="list-group-item list-group-item-action"
-                >
-                  {{ i19myAccount }}
-                </a-link>
-                <a-link
-                  :href="favoritesUrl"
-                  class="list-group-item list-group-item-action"
-                >
-                  {{ i19myFavorites }}
-                </a-link>
-              </div>
-  
-              <button
-                class="login-modal__logout btn btn-block btn-danger"
-                type="button"
-                @click="logout"
-              >
-                <i class="i-sign-out"></i>
-                {{ i19logout }}
-              </button>
-            </div>
-  
-            <div
-              v-else-if="!isLoginForm"
-              key="oauth"
-            >
-              <div
-                v-if="!isWaitingPopup && hasNoProfileFound"
-                class="alert alert-info"
-                role="alert"
-              >
-                {{ i19noProfileFoundWithEmail }}
-                <b>{{ email }}</b>.
-                <br>
-                <a
-                  href="#"
-                  class="alert-link"
-                  @click.prevent="hasNoProfileFound = false"
-                >
-                  {{ i19signInWithAnotherEmail }}
-                </a>
-              </div>
-  
-              <a-alert
-                :can-show="isWaitingPopup"
-                variant="info"
-              >
-                {{ i19continueLoginOnPopup }}.
-              </a-alert>
-  
-              <button
-                v-for="({ link, faIcon, providerName, provider }) in oauthProviders"
-                type="button"
-                class="login-modal__btn btn btn-block"
-                :key="provider"
-                :class="`login-modal__btn--${provider}`"
-                @click="openOauthPopup(link, provider)"
-              >
-                <span class="login-modal__btn-icon">
-                  <i :class="`fab ${faIcon}`"></i>
-                </span>
-                {{ hasNoProfileFound ? i19signUpWith : i19signInWith }}
-                {{ providerName }}
-              </button>
-  
-              <!-- <button
-                v-if="!hasNoProfileFound"
-                type="button"
-                class="login-modal__btn btn btn-block btn-secondary"
-                key="email"
-                @click="isLoginForm = true"
-              >
-                <span class="login-modal__btn-icon">
-                  <i class="i-envelope"></i>
-                </span>
-                {{ `${i19signInWith} ${i19email}` }}
-              </button> -->
-              <div class="login-modal__visitor-info">
-                <a href="/app/#/account/">Login / Cadastre-se aqui</a>
-              </div>
-            </div>
-  
-            <!-- <div
-              v-else
-              key="form"
-            >
-              <form @submit.prevent="submitEmail">
-                <div class="form-group">
-                  <button
-                    class="login-modal__back btn"
-                    type="button"
-                    @click="isLoginForm = false"
-                  >
-                    <i class="i-arrow-left"></i>
-                  </button>
-                  <label for="login-modal-email">
-                    {{ `${i19signInWith} ${i19email}` }}
-                  </label>
-                  <input
-                    ref="input"
-                    type="email"
-                    class="form-control"
-                    id="login-modal-email"
-                    placeholder="email@mail.com"
-                    v-model="email"
-                    required
-                  >
-                </div>
+            <form @submit.prevent="submitEmail">
+              <div class="form-group">
                 <button
-                  type="submit"
-                  class="btn btn-block btn-primary"
+                  class="login-modal__back btn"
+                  type="button"
+                  @click="isLoginForm = false"
                 >
-                  {{ i19login }}
+                  <i class="i-arrow-left"></i>
                 </button>
-              </form>
-            </div> -->
-          </transition-group>
-        </div>
+                <label for="login-modal-email">
+                  {{ `${i19signInWith} ${i19email}` }}
+                </label>
+                <input
+                  ref="input"
+                  type="email"
+                  class="form-control"
+                  id="login-modal-email"
+                  placeholder="email@mail.com"
+                  v-model="email"
+                  required
+                >
+              </div>
+              <button
+                type="submit"
+                class="btn btn-block btn-primary"
+              >
+                {{ i19login }}
+              </button>
+            </form>
+          </div>
+        </transition-group>
       </div>
-    </transition>
-  </div>
-  
+    </div>
+  </transition>
+</div>

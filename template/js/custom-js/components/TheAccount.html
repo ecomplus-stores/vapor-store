@@ -1,131 +1,130 @@
 <div class="account">
-    <div
-      v-if="localCustomer._id"
-      class="account__logged"
-    >
-      <h2 class="account__greetings">
-        <i class="i-user-circle"></i>
-        {{ `${i19hello} ${nickname}` }}
-      </h2>
-  
-      <div class="account__logout">
-        {{ `${i19isNotYou}?` }}
-        <a
-          href="#"
-          @click.prevent="logout"
-        >
-          <i class="i-sign-out"></i>
-          {{ i19logout }}
-        </a>
-      </div>
-  
-      <ul class="account__nav nav nav-tabs">
-        <li
-          v-for="({ label, value }) in navTabs"
-          class="nav-item"
-        >
-          <a
-            class="nav-link"
-            :class="activeTab === value ? 'active' : null"
-            href="#"
-            @click.prevent="activeTab = value"
-          >
-            {{ label }}
-          </a>
-        </li>
-      </ul>
-  
-      <div class="account__content">
-        <transition
-          enter-active-class="animated fadeInLeft slow"
-          leave-active-class="animated fadeOutLeft"
-        >
-          <div v-if="currentTab === 'account' || !currentTab">
-            <slot name="registration">
-              <div class="row">
-                <div class="col-md-7">
-                  <slot name="account-form"/>
-                </div>
-                <div class="col-md-5 mt-3 mt-md-0">
-                  <h4>{{ i19addresses }}</h4>
-                  <slot name="account-addresses"/>
-                </div>
-              </div>
-            </slot>
-          </div>
-        </transition>
-  
-        <transition
-          enter-active-class="animated fadeInRight slow"
-          leave-active-class="animated fadeOutRight position-absolute"
-        >
-          <div v-if="currentTab === 'orders'">
-            <slot name="orders-list"/>
-          </div>
-        </transition>
-  
-        <transition
-          enter-active-class="animated fadeInRight slow"
-          leave-active-class="animated fadeOutRight position-absolute"
-        >
-          <div v-if="currentTab === 'favorites'">
-            <slot name="favorites">
-              <recommended-items
-                v-if="favoriteIds.length"
-                :product-ids="favoriteIds"
-              >
-              </recommended-items>
-              <div v-else>
-                {{ i19noSavedFavoritesMsg }}
-              </div>
-            </slot>          
-          </div>
-        </transition>
-        <transition
-          enter-active-class="animated fadeInRight slow"
-          leave-active-class="animated fadeOutRight position-absolute"
-        >
-          <div v-if="currentTab === 'points'">
-            <slot name="account-points"/>
-          </div>
-        </transition>
-        <transition
-          enter-active-class="animated fadeInRight slow"
-          leave-active-class="animated fadeOutRight position-absolute"
-        >
-          <div v-if="currentTab === 'subscriptions'">
-            <slot name="subscriptions" />
-          </div>
-        </transition>
-      </div>
-    </div>
-  
-    <div v-else-if="customerEmail" style="max-width: 600px; margin: 0 auto;">
-      <template v-if="!isAccountCreated">
-        <p class="lead">
-          Cadastre-se pelo formulário abaixo
-        </p>
-        <account-form :customer.sync="localCustomer" @submit="signup" />
-      </template>
-      <a-alert
-        :can-show="isAccountCreated"
-        variant="info"
+  <div
+    v-if="localCustomer._id"
+    class="account__logged"
+  >
+    <h2 class="account__greetings">
+      <i class="i-user-circle"></i>
+      {{ `${i19hello} ${nickname}` }}
+    </h2>
+
+    <div class="account__logout">
+      {{ `${i19isNotYou}?` }}
+      <a
+        href="#"
+        @click.prevent="logout"
       >
-        Sua conta foi criada com sucesso, por favor aguarde a aprovação
-        e retorne nos próximos dias. Entraremos em contato.
-      </a-alert>
-      <p class="mt-3">
-        Analisaremos os dados cadastrados o mais rápido possível, você poderá visualizar
-        os preços e comprar na loja após a aprovação da conta.
-      </p>
+        <i class="i-sign-out"></i>
+        {{ i19logout }}
+      </a>
     </div>
-  
-    <login-block
-      v-else
-      class="account__login"
-      @login="login"
-      :customer-email.sync="customerEmail"
-      :can-accept-guest="true"
-    />
+
+    <ul class="account__nav nav nav-tabs">
+      <li
+        v-for="({ label, value }) in navTabs"
+        class="nav-item"
+      >
+        <a
+          class="nav-link"
+          :class="activeTab === value ? 'active' : null"
+          href="#"
+          @click.prevent="activeTab = value"
+        >
+          {{ label }}
+        </a>
+      </li>
+    </ul>
+
+    <div class="account__content">
+      <transition
+        enter-active-class="animated fadeInLeft slow"
+        leave-active-class="animated fadeOutLeft"
+      >
+        <div v-if="currentTab === 'account' || !currentTab">
+          <slot name="registration">
+            <div class="row">
+              <div class="col-md-7">
+                <slot name="account-form"/>
+              </div>
+              <div class="col-md-5 mt-3 mt-md-0">
+                <h4>{{ i19addresses }}</h4>
+                <slot name="account-addresses"/>
+              </div>
+            </div>
+          </slot>
+        </div>
+      </transition>
+
+      <transition
+        enter-active-class="animated fadeInRight slow"
+        leave-active-class="animated fadeOutRight position-absolute"
+      >
+        <div v-if="currentTab === 'orders'">
+          <slot name="orders-list"/>
+        </div>
+      </transition>
+
+      <transition
+        enter-active-class="animated fadeInRight slow"
+        leave-active-class="animated fadeOutRight position-absolute"
+      >
+        <div v-if="currentTab === 'favorites'">
+          <slot name="favorites">
+            <recommended-items
+              v-if="favoriteIds.length"
+              :product-ids="favoriteIds"
+            >
+            </recommended-items>
+            <div v-else>
+              {{ i19noSavedFavoritesMsg }}
+            </div>
+          </slot>          
+        </div>
+      </transition>
+      <transition
+        enter-active-class="animated fadeInRight slow"
+        leave-active-class="animated fadeOutRight position-absolute"
+      >
+        <div v-if="currentTab === 'points'">
+          <slot name="account-points"/>
+        </div>
+      </transition>
+      <transition
+        enter-active-class="animated fadeInRight slow"
+        leave-active-class="animated fadeOutRight position-absolute"
+      >
+        <div v-if="currentTab === 'subscriptions'">
+          <slot name="subscriptions" />
+        </div>
+      </transition>
+    </div>
   </div>
-  
+
+  <div v-else-if="customerEmail" style="max-width: 600px; margin: 0 auto;">
+    <template v-if="!isAccountCreated">
+      <p class="lead">
+        Cadastre-se pelo formulário abaixo
+      </p>
+      <account-form :customer.sync="localCustomer" @submit="signup" />
+    </template>
+    <a-alert
+      :can-show="isAccountCreated"
+      variant="info"
+    >
+      Sua conta foi criada com sucesso, por favor aguarde a aprovação
+      e retorne nos próximos dias. Entraremos em contato.
+    </a-alert>
+    <p class="mt-3">
+      Analisaremos os dados cadastrados o mais rápido possível, você poderá visualizar
+      os preços e comprar na loja após a aprovação da conta.
+    </p>
+  </div>
+
+  <login-block
+    v-else
+    class="account__login"
+    @login="login"
+    :customer-email.sync="customerEmail"
+    :can-accept-guest="true"
+  />
+</div>
