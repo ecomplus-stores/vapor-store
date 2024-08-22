@@ -21,7 +21,7 @@ import {
     i19save,
     i19saved
   } from '@ecomplus/i18n'
-
+  
   import {
     $ecomConfig,
     i18n,
@@ -29,32 +29,32 @@ import {
     birthDate as getBirthDate,
     phone as getPhone
   } from '@ecomplus/utils'
-
+  
   import cloneDeep from 'lodash.clonedeep'
   import checkFormValidity from '@ecomplus/storefront-components/src/js/helpers/check-form-validity'
   import InputDocNumber from '@ecomplus/storefront-components/src/InputDocNumber.vue'
   import InputPhone from '@ecomplus/storefront-components/src/InputPhone.vue'
   import InputDate from '@ecomplus/storefront-components/src/InputDate.vue'
-
+  
   const countryCode = $ecomConfig.get('country_code')
-
+  
   const { sessionStorage } = window
   const storageKey = 'ecomCustomerAccount'
-
+  
   const countInvalidInputs = (attr = ':invalid') => {
     return document.querySelectorAll(`.account-form input${attr}`).length
   }
   const formValidateClass = 'was-validated'
-
+  
   export default {
     name: 'AccountForm',
-
+  
     components: {
       InputDocNumber,
       InputPhone,
       InputDate
     },
-
+  
     props: {
       isShort: Boolean,
       isGuestAccess: Boolean,
@@ -79,7 +79,7 @@ import {
         }
       }
     },
-
+  
     data () {
       return {
         localCustomer: Object.assign(cloneDeep(this.customer), {registry_type: 'j'}),
@@ -89,7 +89,7 @@ import {
         isPrivacyOptIn: Boolean(this.customer._id)
       }
     },
-
+  
     computed: {
       i19a: () => i18n(i19a),
       i19birthdate: () => i18n(i19birthdate),
@@ -110,7 +110,7 @@ import {
       i19emailMarketingOptInMsg: () => i18n(i19emailMarketingOptInMsg),
       i19personalRegistration: () => i18n(i19personalRegistration),
       i19privacyPolicy: () => i18n(i19privacyPolicy),
-
+  
       birthdate: {
         get () {
           return getBirthDate(this.localCustomer)
@@ -138,7 +138,7 @@ import {
           }
         }
       },
-
+  
       phoneNumber: {
         get () {
           return this.getPhoneStr(0)
@@ -147,7 +147,7 @@ import {
           this.localCustomer.phones[0] = this.parsePhoneStr(phoneStr)
         }
       },
-
+  
       secondPhoneNumber: {
         get () {
           return this.getPhoneStr(1)
@@ -158,7 +158,7 @@ import {
         }
       }
     },
-
+  
     methods: {
       getPhoneStr (index = 0) {
         const { phones } = this.localCustomer
@@ -166,7 +166,7 @@ import {
           ? getPhone(this.localCustomer.phones[index])
           : ''
       },
-
+  
       parsePhoneStr (phoneStr) {
         let code, number
         if (phoneStr.charAt(0) === '+') {
@@ -181,13 +181,13 @@ import {
         }
         return phoneObj
       },
-
+  
       update () {
         if (this.$el.checkValidity()) {
           this.$emit('update:customer', this.localCustomer)
         }
       },
-
+  
       mergeLocalCustomer (newCustomer) {
         for (const field in newCustomer) {
           if (newCustomer[field]) {
@@ -208,11 +208,11 @@ import {
           }
         }
       },
-
+  
       saveToStorage () {
         sessionStorage.setItem(storageKey, JSON.stringify(this.localCustomer))
       },
-
+  
       submit () {
         this.$nextTick(() => {
           const $form = this.$el
@@ -232,7 +232,7 @@ import {
           }
         })
       },
-
+  
       save () {
         this.update()
         this.$emit('submit', this.localCustomer)
@@ -242,7 +242,7 @@ import {
         }, 3000)
       }
     },
-
+  
     watch: {
       fullName (nameStr) {
         const fixedFullName = nameStr.replace(/\s{2,}/g, ' ')
@@ -262,14 +262,14 @@ import {
           }
         }
       },
-
+  
       customer: {
         handler () {
           this.mergeLocalCustomer(this.customer)
         },
         deep: true
       },
-
+  
       localCustomer: {
         handler () {
           if (this.isGuestAccess) {
@@ -279,7 +279,7 @@ import {
         deep: true
       }
     },
-
+  
     created () {
       const sessionCustomer = JSON.parse(sessionStorage.getItem(storageKey))
       if (sessionCustomer) {
@@ -294,7 +294,7 @@ import {
         this.localCustomer.accepts_marketing = true
       }
     },
-
+  
     mounted () {
       const $inputs = this.$el.querySelectorAll('input')
       for (let i = 0; i < $inputs.length; i++) {
@@ -304,8 +304,9 @@ import {
         }
       }
     },
-
+  
     destroyed () {
       clearInterval(this.storageInterval)
     }
   }
+  

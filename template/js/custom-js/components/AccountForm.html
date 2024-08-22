@@ -1,0 +1,268 @@
+<form
+  class="account-form needs-validation"
+  @submit.prevent="submit"
+  novalidate
+>
+  <div class="form-group">
+    <label for="account-form-email">
+      {{ i19emailAddress }}
+    </label>
+    <input
+      type="email"
+      pattern="\S+@\S+\.\S{2,}"
+      class="form-control"
+      id="account-form-email"
+      v-model.trim="localCustomer.main_email"
+      placeholder="email@mail.com"
+      required
+    >
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col-lg-8">
+      <label for="account-form-name">
+        {{ i19fullName }}
+      </label>
+      <input
+        type="text"
+        pattern="[^\d\s]{2,}[\s][^\d\s]{2,}.*"
+        class="form-control"
+        id="account-form-name"
+        v-model.trim="fullName"
+        required
+      >
+    </div>
+
+    <div
+      class="form-group col-lg-4"
+      v-if="!isShort"
+    >
+      <label for="account-form-nickname">
+        {{ i19nickname }}
+      </label>
+      <input
+        type="text"
+        pattern="[^\d\s]{2,}.*"
+        class="form-control"
+        id="account-form-nickname"
+        v-model.trim="localCustomer.display_name"
+      >
+    </div>
+  </div>
+
+  <div
+    class="form-group"
+    v-if="!isShort"
+  >
+    <div
+      class="custom-control custom-radio custom-control-inline"
+      v-for="(label, value) in i19Gender"
+    >
+      <input
+        type="radio"
+        name="account-form-gender"
+        class="custom-control-input"
+        :id="`account-form-gender-${value}`"
+        :value="value"
+        v-model="localCustomer.gender"
+      >
+      <label
+        class="custom-control-label"
+        :for="`account-form-gender-${value}`"
+      >
+        {{ label }}
+      </label>
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col-lg-4">
+      <label for="account-form-phone">
+        {{ i19contactPhone }}
+      </label>
+      <input-phone
+        id="account-form-phone"
+        v-model="phoneNumber"
+        required
+      />
+    </div>
+
+    <div
+      class="form-group col-lg-4"
+      v-if="!isShort"
+    >
+      <label for="account-form-cell">
+        {{ i19cellphone }}
+      </label>
+      <input-phone
+        id="account-form-cell"
+        v-model="secondPhoneNumber"
+      />
+    </div>
+
+    <div
+      v-show="!isGuestAccess"
+      class="form-group col-lg-4"
+    >
+      <label for="account-form-birth">
+        {{ i19birthdate }}
+      </label>
+      <input-date
+        id="account-form-birth"
+        v-model="birthdate"
+      />
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div
+      class="custom-control custom-radio custom-control-inline"
+      v-for="(label, value) in {
+        j: i19companyRegistration
+      }"
+    >
+      <input
+        type="radio"
+        name="account-form-type"
+        class="custom-control-input"
+        :id="`account-form-type-${value}`"
+        :value="value"
+        v-model="localCustomer.registry_type"
+        required
+      >
+      <label
+        class="custom-control-label"
+        :for="`account-form-type-${value}`"
+      >
+        {{ label }}
+      </label>
+    </div>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col-lg-6">
+      <label for="account-form-doc">
+        {{ i19docNumber }}
+      </label>
+      <input-doc-number
+        id="account-form-doc"
+        v-model="localCustomer.doc_number"
+        :isCompany="localCustomer.registry_type !== 'p'"
+        required
+      />
+    </div>
+  </div>
+
+  <div
+    v-if="localCustomer.registry_type !== 'p'"
+    class="account-form__legal-person"
+  >
+    <div class="form-row">
+      <div class="form-group col-lg-8">
+        <label for="account-form-name">
+          {{ i19corporateName }}
+        </label>
+        <input
+          type="text"
+          pattern="[\w-]{1,}[\s][\w-]{1,}.*"
+          minlength="4"
+          class="form-control"
+          id="account-form-name"
+          v-model.trim="localCustomer.corporate_name"
+          required
+        >
+      </div>
+    </div>
+
+    <div class="form-row account-form__inscription">
+      <div class="form-group col-lg-6">
+        <label for="account-form-inscription">
+          {{ i19inscriptionNumber }}
+        </label>
+        <input
+          type="text"
+          maxlength="50"
+          class="form-control"
+          id="account-form-inscription"
+          v-model.trim="localCustomer.inscription_number"
+        >
+      </div>
+      <div class="form-group col-lg-5 pb-lg-2 ml-lg-2">
+        <div
+          class="custom-control custom-radio custom-control-inline"
+          v-for="(label, value) in i19InscriptionType"
+        >
+          <input
+            type="radio"
+            name="account-form-gender"
+            class="custom-control-input"
+            :id="`account-form-gender-${value}`"
+            :value="value"
+            v-model="localCustomer.inscription_type"
+          >
+          <label
+            class="custom-control-label"
+            :for="`account-form-gender-${value}`"
+          >
+            {{ label }}
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="custom-control custom-checkbox">
+      <input
+        type="checkbox"
+        class="custom-control-input"
+        id="account-form-marketing"
+        v-model="localCustomer.accepts_marketing"
+      >
+      <label
+        class="custom-control-label"
+        for="account-form-marketing"
+      >
+        {{ i19emailMarketingOptInMsg }}
+      </label>
+    </div>
+  </div>
+
+  <template v-if="!isGuestAccess">
+    <div
+      v-if="privacyPolicyUrl"
+      class="form-group"
+    >
+      <div class="custom-control custom-checkbox">
+        <input
+          type="checkbox"
+          class="custom-control-input"
+          id="account-form-privacy-policy"
+          v-model="isPrivacyOptIn"
+          required
+        >
+        <label
+          class="custom-control-label"
+          for="account-form-privacy-policy"
+        >
+          {{ i19iReadAndAccept }}
+          {{ i19a }}
+          <a
+            :href="privacyPolicyUrl"
+            target="_blank"
+            v-text="i19privacyPolicy"
+          ></a>.
+        </label>
+      </div>
+    </div>
+  </template>
+
+  <button
+    v-if="hasSubmitBtn"
+    class="btn btn-lg btn-primary"
+    type="submit"
+  >
+    <i class="i-check mr-1"></i>
+    {{ btnLabel }}
+  </button>
+</form>

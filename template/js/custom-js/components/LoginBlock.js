@@ -13,20 +13,20 @@ import {
     i19signInWith,
     i19weUseYourDataToMsg
   } from '@ecomplus/i18n'
-
+  
   import { i18n } from '@ecomplus/utils'
   import ecomPassport from '@ecomplus/passport-client'
   import AAlert from '@ecomplus/storefront-components/src/AAlert.vue'
   import InputDocNumber from '@ecomplus/storefront-components/src/InputDocNumber.vue'
-
+  
   export default {
     name: 'LoginBlock',
-
+  
     components: {
       AAlert,
       InputDocNumber
     },
-
+  
     props: {
       customerEmail: String,
       canAcceptGuest: {
@@ -40,7 +40,7 @@ import {
         }
       }
     },
-
+  
     data () {
       return {
         email: this.customerEmail,
@@ -52,7 +52,7 @@ import {
         failAlertText: null
       }
     },
-
+  
     computed: {
       i19continue: () => i18n(i19continue),
       i19enterYourDocNumberMsg: () => i18n(i19enterYourDocNumberMsg),
@@ -66,7 +66,7 @@ import {
       i19signInWith: () => i18n(i19signInWith),
       i19weUseYourDataToMsg: () => i18n(i19weUseYourDataToMsg)
     },
-
+  
     methods: {
       confirmAccount () {
         const { checkLogin, checkAuthorization, getCustomer } = this.ecomPassport
@@ -79,7 +79,7 @@ import {
         }
         return isIdentified
       },
-
+  
       submitLogin () {
         if (!this.isWaitingLogin) {
           this.isWaitingLogin = true
@@ -102,7 +102,7 @@ import {
                 if (response.status === 401) {
                   this.failAlertText = 'Seu cadastro ainda está em análise.'
                 }
-
+                
               } else if (!isAccountConfirm && this.canAcceptGuest) {
                 this.$emit('update:customer-email', email)
                 emitUpdate()
@@ -115,7 +115,7 @@ import {
             })
         }
       },
-
+  
       oauthPopup (link) {
         this.ecomPassport.popupOauthLink(link)
         this.isWaitingPopup = true
@@ -124,17 +124,17 @@ import {
         }, 7500)
       }
     },
-
+  
     watch: {
       email () {
         this.failAlertText = null
       },
-
+  
       docNumber () {
         this.failAlertText = null
       }
     },
-
+  
     created () {
       this.ecomPassport.fetchOauthProviders()
         .then(({ host, baseUri, oauthPath, providers }) => {
@@ -162,7 +162,7 @@ import {
           console.error(err)
         })
     },
-
+  
     mounted () {
       this.$refs.inputEmail.focus()
       const { checkLogin, checkAuthorization, getCustomer } = this.ecomPassport
@@ -185,3 +185,4 @@ import {
       handleLogin()
     }
   }
+  
