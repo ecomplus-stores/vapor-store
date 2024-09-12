@@ -100,10 +100,31 @@
     </div>
   </div>
 
+  <div v-else-if="customerEmail" style="max-width: 600px; margin: 0 auto;">
+    <template v-if="!isAccountCreated">
+      <p class="lead">
+        Cadastre-se pelo formulário abaixo
+      </p>
+      <account-form :customer.sync="localCustomer" @submit="signup" />
+    </template>
+    <a-alert
+      :can-show="isAccountCreated"
+      variant="info"
+    >
+      Sua conta foi criada com sucesso, por favor aguarde a aprovação
+      e retorne nos próximos dias. Entraremos em contato.
+    </a-alert>
+    <p class="mt-3">
+      Analisaremos os dados cadastrados o mais rápido possível, você poderá visualizar
+      os preços e comprar na loja após a aprovação da conta.
+    </p>
+  </div>
+
   <login-block
     v-else
     class="account__login"
     @login="login"
-    :can-accept-guest="false"
+    :customer-email.sync="customerEmail"
+    :can-accept-guest="true"
   />
 </div>

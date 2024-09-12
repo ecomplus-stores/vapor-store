@@ -109,7 +109,7 @@
           </div>
 
           <template v-else>
-            <slot name="prices">
+            <slot v-if="isLogged" name="prices">
               <p class="product__prices">
                 <a-prices
                   :product="ghostProductForPrices"
@@ -180,109 +180,111 @@
               </div>
             </slot>
 
-            <div
-              v-if="isKit"
-              class="product__kit"
-            >
-              <slot
-                name="kit"
-                v-bind="{ kitItems }"
+            <template v-if="!isLogged">
+              <span class="text-muted">
+                <a href="/app/#/account/">Acesse sua conta</a>
+                na loja para ver os preços e finalizar compras
+              </span>
+              <a
+                role="button"
+                class="btn btn-lg btn-primary mt-3 mb-4"
+                href="/app/#/account/"
               >
-                <transition enter-active-class="animated fadeInUp">
-                  <quantity-selector
-                    v-if="kitItems.length && !isKitWithVariations"
-                    :items="kitItems"
-                    :min="body.min_quantity"
-                    :max="body.quantity"
-                    :slug="body.slug"
-                    :kit-product-id="body._id"
-                    :kit-name="name"
-                    :kit-price="fixedPrice"
-                    @buy="d => $emit('buy', d)"
-                  >
-                    <template #buy-button-content>
-                      <slot name="buy-button-content"/>
-                    </template>
-                  </quantity-selector>
-                  <kit-product-variations
-                    v-if="kitItems.length && isKitWithVariations"
-                    :items="kitItems"
-                    :min="body.min_quantity"
-                    :max="body.quantity"
-                    :slug="body.slug"
-                    :kit-product-id="body._id"
-                    :kit-name="name"
-                    :kit-price="fixedPrice"
-                    :max-options-btns="maxVariationOptionsBtns"
-                  >
-                    <template #buy-button-content>
-                      <slot name="buy-button-content"/>
-                    </template>
-                  </kit-product-variations>
-                </transition>
+                <i class="i-user mr-1"></i>
+                Login/Cadastro
+              </a>
+            </template>
 
-                <span
-                  v-if="!kitItems.length"
-                  class="product__kit-loading spinner-border"
-                  role="status"
-                >
-                  <span class="sr-only">Loading...</span>
-                </span>
-              </slot>
-            </div>
-
-            <template v-else>
+            <template v-if="isLogged">
               <div
-                v-if="!isVariationInStock"
-                class="product__out-of-stock"
+                v-if="isKit"
+                class="product__kit"
               >
-                <slot name="out-of-stock">
-                  {{ i19outOfStock }}
+                <slot
+                  name="kit"
+                  v-bind="{ kitItems }"
+                >
+                  <transition enter-active-class="animated fadeInUp">
+                    <quantity-selector
+                      v-if="kitItems.length"
+                      :items="kitItems"
+                      :min="body.min_quantity"
+                      :max="body.quantity"
+                      :slug="body.slug"
+                      :kit-product-id="body._id"
+                      :kit-name="name"
+                      :kit-price="fixedPrice"
+                      @buy="d => $emit('buy', d)"
+                    >
+                      <template #buy-button-content>
+                        <slot name="buy-button-content"/>
+                      </template>
+                    </quantity-selector>
+                  </transition>
+
+                  <span
+                    v-if="!kitItems.length"
+                    class="product__kit-loading spinner-border"
+                    role="status"
+                  >
+                    <span class="sr-only">Loading...</span>
+                  </span>
                 </slot>
               </div>
 
-              <div
-                v-else-if="hasBuyButton"
-                class="product__buy"
-                ref="buy"
-              >
-                <component
-                  :is="hasQuantitySelector ? 'quantity-selector' : 'div'"
-                  :items="hasQuantitySelector ? [{ _id: body._id, quantity: body.min_quantity || 1 }] : null"
-                  :min="body.min_quantity"
-                  :max="body.quantity"
-                  :has-buy-button="false"
-                  @set-quantity="({ quantity }) => qntToBuy = quantity"
+              <template v-else>
+                <div
+                  v-if="!isVariationInStock"
+                  class="product__out-of-stock"
                 >
-                  <span @click="buy">
-                    <slot
-                      name="buy"
-                      v-bind="{ hasClickedBuy, isOnCart }"
-                    >
-                      <button
-                        type="button"
-                        class="btn btn-lg btn-primary"
-                        :disabled="hasClickedBuy && !isOnCart"
-                      >
-                        <slot name="buy-button-content">
-                          <i class="i-shopping-bag mr-1"></i>
-                          {{ strBuy }}
-                        </slot>
-                      </button>
-                    </slot>
-                  </span>
-                </component>
-              </div>
+                  <slot name="out-of-stock">
+                    {{ i19outOfStock }}
+                  </slot>
+                </div>
 
-              <p
-                class="product__short-stock"
-                v-if="isLowQuantity"
-              >
-                <i class="i-forward mr-1"></i>
-                {{ i19only }}
-                <strong>{{ productQuantity }}</strong>
-                {{ i19unitsInStock }}
-              </p>
+                <div
+                  v-else-if="hasBuyButton"
+                  class="product__buy"
+                  ref="buy"
+                >
+                  <component
+                    :is="hasQuantitySelector ? 'quantity-selector' : 'div'"
+                    :items="hasQuantitySelector ? [{ _id: body._id, quantity: body.min_quantity || 1 }] : null"
+                    :min="body.min_quantity"
+                    :max="body.quantity"
+                    :has-buy-button="false"
+                    @set-quantity="({ quantity }) => qntToBuy = quantity"
+                  >
+                    <span @click="buy">
+                      <slot
+                        name="buy"
+                        v-bind="{ hasClickedBuy, isOnCart }"
+                      >
+                        <button
+                          type="button"
+                          class="btn btn-lg btn-primary"
+                          :disabled="hasClickedBuy && !isOnCart"
+                        >
+                          <slot name="buy-button-content">
+                            <i class="i-shopping-bag mr-1"></i>
+                            {{ strBuy }}
+                          </slot>
+                        </button>
+                      </slot>
+                    </span>
+                  </component>
+                </div>
+
+                <p
+                  class="product__short-stock"
+                  v-if="isLowQuantity"
+                >
+                  <i class="i-forward mr-1"></i>
+                  {{ i19only }}
+                  <strong>{{ productQuantity }}</strong>
+                  {{ i19unitsInStock }}
+                </p>
+              </template>
             </template>
 
             <slot name="sale-timer">
@@ -443,7 +445,7 @@
     </div>
   </transition>
 
-  <template v-if="!isQuickview && hasStickyBuyButton && body.available && isInStock">
+  <template v-if="!isQuickview && hasStickyBuyButton && body.available && isInStock && isLogged">
     <transition
       enter-active-class="animated fadeIn"
       leave-active-class="animated fadeOut fast" 
