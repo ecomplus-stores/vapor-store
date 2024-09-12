@@ -86,11 +86,6 @@
         </p>
       </slot>
 
-      <small v-else-if="!isLogged" class="text-muted">
-        <a href="/app/#/account/">Login</a>
-        para ver o preço
-      </small>
-
       <slot
         name="without-price"
         v-else-if="isWithoutPrice"
@@ -141,13 +136,14 @@
             </button>
           </slot>
         </div>
-      </template>
+      </template>      
       
       <slot name="favorite">
         <a 
           class="btn product-card__favorite fade"
           @click="toggleFavorite"
           :href="isLogged ? null : accountUrl"
+          :aria-label="i19addToFavorites"
         >
           <i 
             class="i-heart mr-1"

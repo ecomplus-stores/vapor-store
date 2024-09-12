@@ -42,22 +42,23 @@ import EcomSearch from '@ecomplus/search-engine'
 import ecomCart from '@ecomplus/shopping-cart'
 import { isMobile } from '@ecomplus/storefront-twbs'
 import lozad from 'lozad'
-import sortApps from '@ecomplus/storefront-components/src/js/helpers/sort-apps'
-import addIdleCallback from '@ecomplus/storefront-components/src/js/helpers/add-idle-callback'
-import scrollToElement from '@ecomplus/storefront-components/src/js/helpers/scroll-to-element'
+import sortApps from './helpers/sort-apps'
+import addIdleCallback from './helpers/add-idle-callback'
+import scrollToElement from './helpers/scroll-to-element'
 import { Portal } from '@linusborg/vue-simple-portal'
-import ALink from '@ecomplus/storefront-components/src/ALink.vue'
-import AAlert from '@ecomplus/storefront-components/src/AAlert.vue'
-import APicture from '@ecomplus/storefront-components/src/APicture.vue'
-import APrices from '@ecomplus/storefront-components/src/APrices.vue'
-import AShare from '@ecomplus/storefront-components/src/AShare.vue'
-import ProductVariations from '@ecomplus/storefront-components/src/ProductVariations.vue'
-import ProductGallery from '@ecomplus/storefront-components/src/ProductGallery.vue'
-import QuantitySelector from '@ecomplus/storefront-components/src/QuantitySelector.vue'
-import ShippingCalculator from '@ecomplus/storefront-components/src/ShippingCalculator.vue'
-import PaymentOption from '@ecomplus/storefront-components/src/PaymentOption.vue'
+import ALink from '../ALink.vue'
+import AAlert from '../AAlert.vue'
+import APicture from '../APicture.vue'
+import APrices from '../APrices.vue'
+import AShare from '../AShare.vue'
+import ProductVariations from '../ProductVariations.vue'
+import KitProductVariations from '../KitProductVariations.vue'
+import ProductGallery from '../ProductGallery.vue'
+import QuantitySelector from '../QuantitySelector.vue'
+import ShippingCalculator from '../ShippingCalculator.vue'
+import PaymentOption from '../PaymentOption.vue'
 import ecomPassport from '@ecomplus/passport-client'
-import { toggleFavorite, checkFavorite } from '@ecomplus/storefront-components/src/js/helpers/favorite-products'
+import { toggleFavorite, checkFavorite } from './helpers/favorite-products'
 
 const storefront = (typeof window === 'object' && window.storefront) || {}
 const getContextBody = () => (storefront.context && storefront.context.body) || {}
@@ -83,6 +84,7 @@ export default {
     APicture,
     APrices,
     AShare,
+    KitProductVariations,
     ProductVariations,
     ProductGallery,
     QuantitySelector,
@@ -211,12 +213,8 @@ export default {
       return checkInStock(this.selectedVariationId ? this.selectedVariation : this.body)
     },
 
-    getCustomer () {
-      return ecomPassport.getCustomer() 
-    },
-
     isLogged () {
-      return ecomPassport.checkAuthorization() && this.getCustomer.doc_number
+      return ecomPassport.checkAuthorization()
     },
 
     thumbnail () {
@@ -287,6 +285,10 @@ export default {
 
     isKit () {
       return this.body.kit_composition && this.body.kit_composition.length
+    },
+
+    isKitWithVariations () {
+      return this.kitItems.some(item => item.variations && item.variations.length)
     }
   },
 
@@ -505,14 +507,7 @@ export default {
                     _id: genRandomObjectId()
                   })
                 }
-                if (product.variations) {
-                  product.variations.forEach(variation => {
-                    variation._id = genRandomObjectId()
-                    addKitItem(variation._id)
-                  })
-                } else {
-                  addKitItem()
-                }
+                addKitItem()
               })
             })
             .catch(console.error)

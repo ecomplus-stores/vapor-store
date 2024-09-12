@@ -15,22 +15,16 @@ import {
   nickname as getNickname
 } from '@ecomplus/utils'
 
-import axios from 'axios'
-import { $ecomConfig } from '@ecomplus/utils'
 import ecomPassport from '@ecomplus/passport-client'
-import LoginBlock from '@ecomplus/storefront-components/src/LoginBlock.vue'
-import RecommendedItems from '@ecomplus/storefront-components/src/RecommendedItems.vue'
-import AAlert from '@ecomplus/storefront-components/src/AAlert.vue'
-import AccountForm from '@ecomplus/storefront-components/src/AccountForm.vue'
+import LoginBlock from '../LoginBlock.vue'
+import RecommendedItems from '../RecommendedItems.vue'
 
 export default {
   name: 'TheAccount',
 
   components: {
     LoginBlock,
-    RecommendedItems,
-    AAlert,
-    AccountForm
+    RecommendedItems
   },
 
   props: {
@@ -46,6 +40,12 @@ export default {
         return ['orders', 'favorites', 'subscriptions', 'points', 'account'].includes(value)
       }
     },
+    isExternalAuth: {
+      type: Boolean,
+      default () {
+        return Boolean(window.$firebaseConfig && window.$firebaseConfig.authDomain)
+      }
+    },
     ecomPassport: {
       type: Object,
       default () {
@@ -57,9 +57,7 @@ export default {
   data () {
     return {
       favoriteIds: [],
-      navTabs: [],
-      customerEmail: this.customer.main_email || this.ecomPassport.getCustomer().main_email,
-      isAccountCreated: false
+      navTabs: []
     }
   },
 
@@ -131,13 +129,6 @@ export default {
         this.ecomPassport.logout()
         this.$emit('logout')
       }
-    },
-
-    signup () {
-      const endpoint = `https://passport.e-com.plus/v1/${$ecomConfig.get('store_id')}/signup.json`
-      axios.post(endpoint, this.localCustomer).then(() => {
-        this.isAccountCreated = true
-      })
     }
   },
 
@@ -154,16 +145,14 @@ export default {
       },
       immediate: true,
       deep: true
-    },
-
-    customerEmail (email) {
-      if (email && email !== this.localCustomer.main_email) {
-        this.localCustomer.main_email = email
-      }
     }
   },
 
   created () {
+    if (this.isExternalAuth && !this.ecomPassport.checkAuthorization()) {
+      window.location.href = '/app/account'
+      return
+    }
     this.navTabs = [
       {
         label: this.i19registration,

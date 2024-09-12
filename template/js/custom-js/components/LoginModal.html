@@ -141,9 +141,11 @@
               </span>
               {{ `${i19signInWith} ${i19email}` }}
             </button>
-            <div class="login-modal__visitor-info">
-              Não tem conta?
-              <a href="/app/#/account/">Comece aqui</a>
+            <div
+              v-else
+              class="login-modal__visitor-info"
+            >
+              {{ i19guestCheckoutMsg }}
             </div>
           </div>
 

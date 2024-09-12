@@ -17,11 +17,11 @@ import {
 import Vue from 'vue'
 import { store } from '@ecomplus/client'
 import ecomCart from '@ecomplus/shopping-cart'
-import ALink from '@ecomplus/storefront-components/src/ALink.vue'
-import APicture from '@ecomplus/storefront-components/src/APicture.vue'
-import APrices from '@ecomplus/storefront-components/src/APrices.vue'
+import ALink from '../ALink.vue'
+import APicture from '../APicture.vue'
+import APrices from '../APrices.vue'
 import ecomPassport from '@ecomplus/passport-client'
-import { toggleFavorite, checkFavorite } from '@ecomplus/storefront-components/src/js/helpers/favorite-products'
+import { toggleFavorite, checkFavorite } from './helpers/favorite-products'
 
 const getExternalHtml = (varName, product) => {
   if (typeof window === 'object') {
@@ -128,12 +128,8 @@ export default {
       return this.body.available && this.body.visible && this.isInStock
     },
 
-    getCustomer () {
-      return ecomPassport.getCustomer() 
-    },
-
     isLogged () {
-      return ecomPassport.checkAuthorization() && this.getCustomer.doc_number
+      return ecomPassport.checkAuthorization()
     },
 
     discount () {
@@ -192,7 +188,7 @@ export default {
             for (let i = 0; i < selectFields.length; i++) {
               const selectOptions = data[selectFields[i]]
               if (selectOptions && selectOptions.length) {
-                return import('@ecomplus/storefront-components/src/ProductQuickview.vue')
+                return import('../ProductQuickview.vue')
                   .then(quickview => {
                     new Vue({
                       render: h => h(quickview.default, {
