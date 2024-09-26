@@ -9,6 +9,16 @@
           "img": "/img/uploads/banner_2024_reabertura.jpg"
         }
       ]
+    },
+    {
+      "type": "shelfs-nav",
+      "shuffle": true,
+      "limit": 4,
+      "page": 1,
+      "collection_ids": [
+        "6012679ad6981740b49baa9e:categories:Aparelhos:/vaporizadores/"
+      ],
+      "sort": "sales"
     }
   ]
 }
