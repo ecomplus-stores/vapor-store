@@ -1,5 +1,14 @@
 {
   "meta_title": "VaporStore -  Os melhores aparelhos!",
   "meta_description": "",
-  "sections": []
+  "sections": [
+    {
+      "type": "banners-grid",
+      "banners": [
+        {
+          "img": "/img/uploads/banner_2024_reabertura.jpg"
+        }
+      ]
+    }
+  ]
 }
