@@ -33,6 +33,13 @@
       "page": 3,
       "collection_id": "6012679ad6981740b49baa9e:categories:Aparelhos:/vaporizadores/",
       "sort": "sales"
+    },
+    {
+      "type": "collection-shelf",
+      "shuffle": false,
+      "limit": 4,
+      "page": 4,
+      "collection_id": "6012679ad6981740b49baa9e:categories:Aparelhos:/vaporizadores/"
     }
   ]
 }
