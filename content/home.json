@@ -4,7 +4,7 @@
   "sections": [
     {
       "type": "custom-html",
-      "html": "<html lang=\"en\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>Image Pop-Up</title>\n    <style>\n        body {\n            margin: 0;\n            padding: 0;\n            overflow: hidden;\n        }\n        #popup {\n            display: flex;\n            justify-content: center;\n            align-items: center;\n            position: fixed;\n            top: 0;\n            left: 0;\n            right: 0;\n            bottom: 0;\n            background-color: rgba(0, 0, 0, 0.7);\n            z-index: 1000;\n        }\n        #popup img {\n            max-width: 90%;\n            max-height: 90%;\n        }\n        #close-btn {\n            position: absolute;\n            top: 20px;\n            right: 20px;\n            background-color: red;\n            color: white;\n            border: none;\n            padding: 10px;\n            cursor: pointer;\n            font-size: 18px;\n        }\n    </style>\n</head>\n<body>\n    <div id=\"popup\">\n        <img src=\"r.png\" alt=\"Pop-Up Image\">\n        <button id=\"close-btn\">Close</button>\n    </div>\n\n    <script>\n        document.getElementById('close-btn').onclick = function() {\n            window.close();\n        };\n        \n        // Optionally, you can close the window if it was opened by a script\n        window.onbeforeunload = function() {\n            return \"Are you sure you want to leave?\";\n        };\n    </script>\n</body>\n</html>"
+      "html": "\n"
     }
   ]
 }
