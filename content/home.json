@@ -1,10 +1,5 @@
 {
   "meta_title": "VaporStore -  Os melhores aparelhos!",
   "meta_description": "",
-  "sections": [
-    {
-      "type": "custom-html",
-      "html": "\n"
-    }
-  ]
+  "sections": []
 }
