@@ -10,7 +10,8 @@
   },
   "categories_list": {
     "featured": [
-      "/vaporizadores/?Aparelhos"
+      "/vaporizadores/?Aparelhos",
+      "/seminovos/?Seminovos"
     ],
     "random": 1,
     "full_width": true
