@@ -13,45 +13,6 @@
       "img": "/img/uploads/banner_2024_reabertura-1-.jpg"
     },
     {
-      "type": "shelfs-nav",
-      "shuffle": true,
-      "limit": 12,
-      "page": 1,
-      "collection_ids": [
-        "6012679ad6981740b49baa9e:categories:Aparelhos:/vaporizadores/"
-      ],
-      "sort": "highest_price"
-    },
-    {
-      "type": "shelfs-nav",
-      "shuffle": true,
-      "limit": 9,
-      "page": 1,
-      "collection_ids": [
-        "66c3961a86679971c64a46c6:categories:Aparelhos 2:/aparelhos-2"
-      ],
-      "sort": "sales"
-    },
-    {
-      "type": "shelfs-nav",
-      "shuffle": true,
-      "limit": 12,
-      "page": 1,
-      "collection_ids": [
-        "6012679cd6981740b49baaa3:categories:Seminovos:/seminovos/"
-      ]
-    },
-    {
-      "type": "shelfs-nav",
-      "shuffle": true,
-      "limit": 12,
-      "page": 1,
-      "collection_ids": [
-        "66919a93f4e6d85ab2cf9c6d:categories:Trituradores:/trituradores"
-      ],
-      "sort": "sales"
-    },
-    {
       "type": "document-banner",
       "enabled": true
     },
