@@ -16,7 +16,8 @@
       "limit": 4,
       "page": 1,
       "collection_id": "6012679ad6981740b49baa9e:categories:Aparelhos:/vaporizadores/",
-      "sort": "sales"
+      "sort": "sales",
+      "headless": true
     },
     {
       "type": "collection-shelf",
