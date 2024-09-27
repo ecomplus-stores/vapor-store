@@ -9,8 +9,10 @@
     "socials": false
   },
   "categories_list": {
-    "featured": [],
-    "random": 5,
+    "featured": [
+      "/vaporizadores/?Aparelhos"
+    ],
+    "random": 1,
     "full_width": true
   },
   "search_input": true,
