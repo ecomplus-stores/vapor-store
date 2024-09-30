@@ -1,8 +1,9 @@
-const path = require('path')
+/*const path = require('path')
 
 module.exports = () => ({
   resolve: {
     alias: {
+      
         './html/ProductCard.html': path.resolve(__dirname, 'template/js/custom-js/components/ProductCard.html'),
         './js/ProductCard.js': path.resolve(__dirname, 'template/js/custom-js/components/ProductCard.js'),
         './html/TheProduct.html': path.resolve(__dirname, 'template/js/custom-js/components/TheProduct.html'),
@@ -16,3 +17,4 @@ module.exports = () => ({
     }
   }
 })
+*/
