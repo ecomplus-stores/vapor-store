@@ -298,7 +298,7 @@ body {
     background: #000;
 }
 //caixa de texto página do produto
-.product__buy::before {
+.product__buy::after {
   content: "O envio é realizado em até 5 dias úteis após o pagamento";
   padding: 6px;
   color: #fff;
