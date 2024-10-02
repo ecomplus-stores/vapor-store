@@ -290,9 +290,23 @@ body {
 .card-footer .minicart__btn-checkout.btn.btn-block.btn-primary {
   display: none !important;
 }
+//menu cores
 .header__nav a {
     color: #fff;
 }
 .header__nav {
     background: #000;
+}
+//caixa de texto página do produto
+.product__buy::before {
+  content: "O envio é realizado em até 5 dias úteis após o pagamento";
+  padding: 6px;
+  color: #fff;
+  background-color: #008000;
+  position: relative;
+  display: block;
+  font-size: 14px;
+  border-radius: 4px;
+  text-align: center;
+  margin-top: 10px;
 }
