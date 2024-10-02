@@ -300,7 +300,8 @@ body {
 //
 .shipping-calculator__services:after {
   content: "O envio é realizado em até 5 dias úteis após o pagamento";
-  font-size: 1.2rem;
+  font-size: 1rem;
   display: inherit;
   margin-bottom: 1rem
+  padding: 0.5rem;
 }
