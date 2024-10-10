@@ -297,26 +297,11 @@ body {
 .header__nav {
     background: #000;
 }
-//
+//* Adicionar mensagem sobre envio */
 .shipping-calculator__services:after {
   content: "O envio é realizado em até 5 dias úteis após o pagamento";
   font-size: 1rem;
   display: inherit;
   margin-bottom: 1rem;
   padding: 0.5rem;
-}
-/* Adicionar mensagem sobre região Norte e áreas rurais */
-.product__buy {
-  position: relative;
-}
-.product__buy::after {
-  content: "O envio é realizado em até 5 dias úteis após o pagamento";
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  padding: 6px;
-  color: #fff;
-  background: green;
-  text-align: center;
 }
