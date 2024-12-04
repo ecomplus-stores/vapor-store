@@ -3326,13 +3326,13 @@
     </url>
   
     <url>
-      <loc>https://www.vaporstore.vip/pages/termos</loc>
+      <loc>https://www.vaporstore.vip/pages/trocas</loc>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
     </url>
   
     <url>
-      <loc>https://www.vaporstore.vip/pages/trocas</loc>
+      <loc>https://www.vaporstore.vip/pages/termos</loc>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
     </url>
