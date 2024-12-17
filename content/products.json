@@ -7,6 +7,10 @@
       "slides": []
     },
     {
+      "type": "responsive-banner",
+      "img": "/img/uploads/banner-200.jpeg"
+    },
+    {
       "type": "breadcrumbs",
       "enabled": true
     },
