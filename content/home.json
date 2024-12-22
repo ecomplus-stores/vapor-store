@@ -3,13 +3,19 @@
   "meta_description": "",
   "sections": [
     {
-      "type": "banners-grid",
-      "banners": [
+      "type": "banner-slider",
+      "autoplay": 9000,
+      "full_width": false,
+      "slides": [
         {
+          "start": "",
+          "end": "",
           "img": "/img/uploads/banner-200.jpeg"
         },
         {
-          "img": "/img/uploads/banner_revenda.jpg"
+          "start": "",
+          "end": "",
+          "img": "/img/uploads/1000048923.jpg"
         }
       ]
     },
@@ -47,23 +53,6 @@
       "collection_id": "67424870b779d771795da007:categories:aparelhos-5:/aparelhos-5",
       "sort": "highest_price",
       "headless": true
-    },
-    {
-      "type": "banner-slider",
-      "autoplay": 9000,
-      "full_width": false,
-      "slides": [
-        {
-          "start": "",
-          "end": "",
-          "img": "/img/uploads/banner-200.jpeg"
-        },
-        {
-          "start": "",
-          "end": "",
-          "img": "/img/uploads/1000048923.jpg"
-        }
-      ]
     }
   ]
 }
