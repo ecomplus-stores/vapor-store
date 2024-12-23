@@ -3314,13 +3314,13 @@
     </url>
   
     <url>
-      <loc>https://www.vaporstore.vip/pages/privacidade</loc>
+      <loc>https://www.vaporstore.vip/pages/politica-de-garantia-reembolso-e-devolucao</loc>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
     </url>
   
     <url>
-      <loc>https://www.vaporstore.vip/pages/politica-de-garantia-reembolso-e-devolucao</loc>
+      <loc>https://www.vaporstore.vip/pages/privacidade</loc>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
     </url>
@@ -3368,13 +3368,13 @@
     </url>
   
     <url>
-      <loc>https://www.vaporstore.vip/app/index</loc>
+      <loc>https://www.vaporstore.vip/admin/index</loc>
       <changefreq>monthly</changefreq>
       <priority>0.6</priority>
     </url>
   
     <url>
-      <loc>https://www.vaporstore.vip/admin/index</loc>
+      <loc>https://www.vaporstore.vip/app/index</loc>
       <changefreq>monthly</changefreq>
       <priority>0.6</priority>
     </url>
