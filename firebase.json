@@ -1,11 +1,6 @@
 {
   "hosting": {
     "redirects": [
-      {
-        "source": "/tela-new-vape-pax-2-e-3",
-        "destination": "/",
-        "type": 301
-      }
        ],
     "public": "dist",
     "ignore": [
