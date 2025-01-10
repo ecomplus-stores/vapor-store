@@ -2,8 +2,8 @@
   "hosting": {
     "redirects": [
       {
-        "source": "/",
-        "destination": "/tela-new-vape-pax-2-e-3",
+        "source": "/tela-new-vape-pax-2-e-3",
+        "destination": "/",
         "type": 301
       }
        ],
