@@ -34,7 +34,7 @@
       "limit": 4,
       "page": 1,
       "collection_id": "66f5925e9e4b2e07f51b402f:categories:Aparelhos-3:/aparelhos-3",
-      "sort": "sales"
+      "sort": "slug"
     },
     {
       "type": "collection-shelf",
