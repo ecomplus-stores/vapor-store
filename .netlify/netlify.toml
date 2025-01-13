@@ -5,11 +5,6 @@ to = "/pages/politica-de-garantia-reembolso-e-devolucao"
 status = 301
 force = true
 
-from = "/tela-new-vape-pax-2-e-3"
-to = "/"
-status = 301
-force = true
-
 [build]
   publish = "publish"
   functions = "functions-zip"
