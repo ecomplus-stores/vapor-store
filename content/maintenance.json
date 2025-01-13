@@ -1,6 +1,6 @@
 {
-  "active": false,
-  "title": "Manutenção",
-  "body": "Reabriremos na 2a feira até as 22hs",
+  "active": true,
+  "title": "Reabriremos na 2a feira até as 22hs",
+  "body": "Manutenção",
   "unlock_key": "v4p3420420!@?"
 }
