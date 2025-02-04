@@ -53,6 +53,13 @@
       "collection_id": "67424870b779d771795da007:categories:aparelhos-5:/aparelhos-5",
       "sort": "highest_price",
       "headless": true
+    },
+    {
+      "type": "collection-shelf",
+      "shuffle": false,
+      "limit": 12,
+      "page": 1,
+      "collection_id": "67424870b779d771795da007:categories:aparelhos-5:/aparelhos-5"
     }
   ]
 }
