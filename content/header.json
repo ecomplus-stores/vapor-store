@@ -13,9 +13,10 @@
       "/vaporizadores/?Aparelhos",
       "/seminovos/?Seminovos",
       "/acessorios/?Acessorios",
-      "/trituradores?Trituradores"
+      "/trituradores?Trituradores",
+      "/aparelhos-5?aparelhos-5"
     ],
-    "random": 1,
+    "random": 0,
     "full_width": true
   },
   "search_input": true,
