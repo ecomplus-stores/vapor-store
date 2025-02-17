@@ -20,13 +20,7 @@
     "email": true,
     "address": true
   },
-  "stamps": [
-    {
-      "src": "/img/uploads/GoogleSafeBrowsing.png",
-      "alt": "Google Safe Browsing",
-      "link": "http://www.google.com/safebrowsing/diagnostic?site=www.vaporstore.com.br"
-    }
-  ],
+  "stamps": [],
   "payment_methods": {
     "bb": false,
     "visa": false,
