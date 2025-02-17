@@ -4,6 +4,7 @@ var lessUnit = document.getElementById('lessUnit')
 var firstphrase = document.getElementById('lessSome')
 var lastphrase = document.getElementById('noMore')
 var lessQuantity = 100
+var maxQuantity = 5000
 lessUnit.innerHTML = window.ecomUtils.formatMoney(lessQuantity, 'BRL', 'pt_br')
 ecomCart.on('change', ({ data }) => {
   var cartCalc = document.querySelectorAll('#cart')
