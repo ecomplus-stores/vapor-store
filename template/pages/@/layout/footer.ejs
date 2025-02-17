@@ -207,11 +207,27 @@ const networksWithColors = [
 </footer>
 <div class="row">
   <div class="container" style="display: flex; margin-top: 1rem">
-    <div class="col-12 col-sm-7 text-right" id="selos_seguranca">
+    <div class="col-12 col-sm-7 text-start" id="selos_seguranca"> <!-- Alterado para text-start -->
       <big>Selos e certificados</big>
       <div class="container-fluid">
         <div class="footer__stamps">
-          <%- await include(`@/sections/stamps`, { _, opt: { stamps: footer.stamps } }) %>
+          <ul class="stamps list-unstyled d-flex align-items-center"> <!-- Ajuste para alinhar a imagem -->
+            <li class="me-3"> <!-- Adiciona margem à direita -->
+              <a href="http://www.google.com/safebrowsing/diagnostic?site=www.vaporstore.com.br" target="_blank" rel="noopener">
+                <img 
+                  data-src="/img/uploads/GoogleSafeBrowsing.png" 
+                  alt="Google Safe Browsing" 
+                  class="lozad fade show" 
+                  data-preload="" 
+                  width="126" 
+                  height="40" 
+                  src="/img/uploads/GoogleSafeBrowsing.png" 
+                  data-loaded="true"
+                >
+              </a>
+            </li>
+            <%- await include(`@/sections/stamps`, { _, opt: { stamps: footer.stamps } }) %>
+          </ul>
         </div>
       </div>
     </div>
