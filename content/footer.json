@@ -1,7 +1,7 @@
 {
   "description": {
-    "title": "VaporStore -  Os melhores aparelhos!",
-    "text": "Loja especializada em aparelhos para materiais secos e acessórios. Trabalhamos exclusivamente com produtos originais e as melhores marcas no mercado."
+    "title": "VaporStore -  Os melhores vaporizadores, pronta entrega - BRASIL",
+    "text": "Loja especializada em vaporizadores para ervas secas, óleos e acessórios. Revenda Autorizada Arizer, Dynavap, Storz & Bickel e XVape. "
   },
   "links_1": {
     "list_pages": true,
@@ -41,8 +41,8 @@
     "mastercard": false,
     "citibank": false,
     "mais": false,
-    "pix": false,
+    "pix": true,
     "itau": false
   },
-  "credits": "VaporStore - © 2024 Todos os direitos reservados"
+  "credits": "VaporStore - © 2025 Todos os direitos reservados"
 }
