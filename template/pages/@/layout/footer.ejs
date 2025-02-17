@@ -215,20 +215,5 @@ const networksWithColors = [
         </div>
       </div>
     </div>
-    <div class="col-12 col-sm-5" id="selos_pagamentos" style="text-align: right">
-      <big>Formas de pagamento</big>
-      <div class="mt-4 mb-3">
-        <p class="footer__payment-methods">
-          <% Object.keys(footer.payment_methods).forEach(method => { %>
-            <% if (footer.payment_methods[method]) { %>
-              <i class="pay-icon pay-icon--<%= method %>"></i>
-            <% } %>
-          <% }) %>
-        </p>
-      </div>
-<ul class="list-unstyled" style="display: flex; float: left">
-        <li style="padding: 5px"><img src="/img/uploads/pix-logo.png"></li>
-      </ul>
-    </div>
   </div>
-  </div>
+</div>
