@@ -85,7 +85,7 @@ storefront.on('widget:@ecomplus/widget-tag-manager', function () {
         <input type="checkbox" id="input-confirm-checkout" class="custom-control-input">
         <label for="input-confirm-checkout" class="custom-control-label">
           Eu li e aceito os
-          <a href="/pages/termos" target="_blank">Termos de Uso</a> para continuar comprando.
+          <a href="/pages/termos" target="_blank">termos de garantia, reembolso e devolução</a> para continuar comprando.
         </label>
       </div>
     </div>
