@@ -2864,18 +2864,6 @@
     </url>
   
     <url>
-      <loc>https://www.vaporstore.vip/mais-vendidos</loc>
-      <changefreq>weekly</changefreq>
-      <priority>0.8</priority>
-    </url>
-  
-    <url>
-      <loc>https://www.vaporstore.vip/vitrine</loc>
-      <changefreq>weekly</changefreq>
-      <priority>0.8</priority>
-    </url>
-  
-    <url>
       <loc>https://www.vaporstore.vip/marca/aparelhos-arizer</loc>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
@@ -3074,6 +3062,18 @@
     </url>
   
     <url>
+      <loc>https://www.vaporstore.vip/mais-vendidos</loc>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+    </url>
+  
+    <url>
+      <loc>https://www.vaporstore.vip/vitrine</loc>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+    </url>
+  
+    <url>
       <loc>https://www.vaporstore.vip/pages/contato</loc>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
@@ -3092,13 +3092,13 @@
     </url>
   
     <url>
-      <loc>https://www.vaporstore.vip/pages/termos</loc>
+      <loc>https://www.vaporstore.vip/pages/privacidade</loc>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
     </url>
   
     <url>
-      <loc>https://www.vaporstore.vip/pages/privacidade</loc>
+      <loc>https://www.vaporstore.vip/pages/termos</loc>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
     </url>
