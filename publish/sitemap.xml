@@ -3140,13 +3140,13 @@
     </url>
   
     <url>
-      <loc>https://www.vaporstore.vip/admin/index</loc>
+      <loc>https://www.vaporstore.vip/app/index</loc>
       <changefreq>monthly</changefreq>
       <priority>0.6</priority>
     </url>
   
     <url>
-      <loc>https://www.vaporstore.vip/app/index</loc>
+      <loc>https://www.vaporstore.vip/admin/index</loc>
       <changefreq>monthly</changefreq>
       <priority>0.6</priority>
     </url>
