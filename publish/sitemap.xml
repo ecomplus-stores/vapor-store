@@ -2792,6 +2792,18 @@
     </url>
   
     <url>
+      <loc>https://www.vaporstore.vip/mais-vendidos</loc>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+    </url>
+  
+    <url>
+      <loc>https://www.vaporstore.vip/vitrine</loc>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+    </url>
+  
+    <url>
       <loc>https://www.vaporstore.vip/vaporizadores/</loc>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
@@ -2859,18 +2871,6 @@
   
     <url>
       <loc>https://www.vaporstore.vip/carregador-baterias-vaporizador</loc>
-      <changefreq>weekly</changefreq>
-      <priority>0.8</priority>
-    </url>
-  
-    <url>
-      <loc>https://www.vaporstore.vip/mais-vendidos</loc>
-      <changefreq>weekly</changefreq>
-      <priority>0.8</priority>
-    </url>
-  
-    <url>
-      <loc>https://www.vaporstore.vip/vitrine</loc>
       <changefreq>weekly</changefreq>
       <priority>0.8</priority>
     </url>
@@ -3080,13 +3080,13 @@
     </url>
   
     <url>
-      <loc>https://www.vaporstore.vip/pages/politica-de-garantia-reembolso-e-devolucao</loc>
+      <loc>https://www.vaporstore.vip/pages/entrega</loc>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
     </url>
   
     <url>
-      <loc>https://www.vaporstore.vip/pages/entrega</loc>
+      <loc>https://www.vaporstore.vip/pages/politica-de-garantia-reembolso-e-devolucao</loc>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
     </url>
@@ -3098,13 +3098,13 @@
     </url>
   
     <url>
-      <loc>https://www.vaporstore.vip/pages/termos</loc>
+      <loc>https://www.vaporstore.vip/pages/trocas</loc>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
     </url>
   
     <url>
-      <loc>https://www.vaporstore.vip/pages/trocas</loc>
+      <loc>https://www.vaporstore.vip/pages/termos</loc>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
     </url>
