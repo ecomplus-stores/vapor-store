@@ -9,8 +9,8 @@
     "list": []
   },
   "links_2": {
-    "list_categories": true,
-    "title": "Categorias",
+    "list_categories": false,
+    "title": "",
     "list": []
   },
   "contacts": {
