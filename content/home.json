@@ -38,10 +38,10 @@
     {
       "type": "collection-shelf",
       "shuffle": true,
-      "limit": 4,
+      "limit": 24,
       "page": 1,
       "collection_id": "66f5925e9e4b2e07f51b402f:categories:Aparelhos-3:/aparelhos-3",
-      "sort": "slug",
+      "sort": "lowest_price",
       "headless": false
     },
     {
