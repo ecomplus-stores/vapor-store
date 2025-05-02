@@ -69,7 +69,7 @@
       "type": "collection-shelf",
       "shuffle": true,
       "limit": 24,
-      "page": 5000,
+      "page": "",
       "collection_id": "60126786d6981740b49baa74:brands:Davinci:/marca/davinci",
       "sort": "lowest_price",
       "title": "Acessórios Davinci"
