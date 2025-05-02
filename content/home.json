@@ -39,7 +39,7 @@
       "type": "collection-shelf",
       "shuffle": true,
       "limit": 24,
-      "page": 1,
+      "page": "",
       "collection_id": "66f5925e9e4b2e07f51b402f:categories:Aparelhos-3:/aparelhos-3",
       "sort": "lowest_price",
       "headless": false
