@@ -24,7 +24,7 @@
       "limit": 24,
       "offset": 0,
       "sort": "name",
-      "autoplay": 10000
+      "autoplay": 5000
     },
     {
       "type": "collection-shelf",
