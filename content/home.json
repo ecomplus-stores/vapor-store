@@ -61,7 +61,7 @@
       "shuffle": true,
       "headless": true,
       "type": "collection-shelf",
-      "limit": 4,
+      "limit": 24,
       "collection_id": "60126798d6981740b49baa9c:brands:Xmax:/marca/aparelhos-xmax",
       "sort": "highest_price"
     }
