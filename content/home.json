@@ -43,7 +43,8 @@
       "page": "",
       "collection_id": "66f5925e9e4b2e07f51b402f:categories:Aparelhos-3:/aparelhos-3",
       "sort": "lowest_price",
-      "headless": false
+      "headless": false,
+      "autoplay": 5000
     },
     {
       "type": "collection-shelf",
