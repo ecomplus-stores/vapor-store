@@ -26,6 +26,7 @@
       "shuffle": true,
       "headless": true,
       "type": "collection-shelf",
+      "link": "Baterias",
       "limit": 24,
       "collection_id": "66c3961a86679971c64a46c6:categories:Aparelhos 2:/aparelhos-2",
       "sort": "slug"
