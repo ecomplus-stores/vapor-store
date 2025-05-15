@@ -55,9 +55,9 @@
     {
       "autoplay": 5000,
       "page": 1,
-      "title": " Acessórios - XVape/Xmax",
+      "title": "Baterias / Carregadores",
       "shuffle": true,
-      "headless": true,
+      "headless": false,
       "type": "collection-shelf",
       "limit": 24,
       "collection_id": "60126798d6981740b49baa9c:brands:Xmax:/marca/aparelhos-xmax",
