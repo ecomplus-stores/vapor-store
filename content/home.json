@@ -112,7 +112,7 @@
     {
       "type": "collection-shelf",
       "shuffle": false,
-      "limit": 12,
+      "limit": 2,
       "page": 1,
       "collection_id": "612f83411250e82405c63c46:brands:YOCAN:/yocan",
       "sort": "slug",
