@@ -30,14 +30,15 @@
       "autoplay": 5000
     },
     {
-      "type": "collection-shelf",
-      "shuffle": true,
-      "limit": 24,
+      "autoplay": 5000,
       "page": "",
-      "collection_id": "66f5925e9e4b2e07f51b402f:categories:Aparelhos-3:/aparelhos-3",
-      "sort": "lowest_price",
+      "title": "Xvape - XLux - Xmax",
+      "shuffle": true,
       "headless": false,
-      "autoplay": 5000
+      "type": "collection-shelf",
+      "limit": 24,
+      "collection_id": "66f5925e9e4b2e07f51b402f:categories:Aparelhos-3:/aparelhos-3",
+      "sort": "lowest_price"
     },
     {
       "type": "collection-shelf",
