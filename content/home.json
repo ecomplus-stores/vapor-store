@@ -108,6 +108,16 @@
       "sort": "slug",
       "title": "Acessórios Linx",
       "autoplay": 5000
+    },
+    {
+      "type": "collection-shelf",
+      "shuffle": false,
+      "limit": 12,
+      "page": 1,
+      "collection_id": "612f83411250e82405c63c46:brands:YOCAN:/yocan",
+      "sort": "slug",
+      "link": "Yocan",
+      "autoplay": 5000
     }
   ]
 }
