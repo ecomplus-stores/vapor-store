@@ -2,20 +2,9 @@
   "sections": [
     {
       "type": "banner-slider",
-      "autoplay": 5000,
-      "full_width": true,
-      "slides": [
-        {
-          "start": "",
-          "end": "",
-          "img": "/img/uploads/a-unica-com-90-dias-de-garantia.png"
-        },
-        {
-          "start": "",
-          "end": "",
-          "img": "/img/uploads/banner-10-.jpg"
-        }
-      ]
+      "autoplay": 0,
+      "full_width": false,
+      "slides": []
     },
     {
       "type": "responsive-banner",
