@@ -58,6 +58,16 @@
       "autoplay": 5000
     },
     {
+      "type": "collection-shelf",
+      "shuffle": true,
+      "limit": 24,
+      "page": 1,
+      "collection_id": "60126784d6981740b49baa70:brands:Arizer :/marca/aparelhos-arizer",
+      "sort": "lowest_price",
+      "title": "Acessórios Arizer",
+      "autoplay": 5000
+    },
+    {
       "autoplay": 5000,
       "page": 1,
       "title": "Acessórios XVape / Xmax / XLux",
@@ -67,16 +77,6 @@
       "limit": 24,
       "collection_id": "60126798d6981740b49baa9c:brands:Xmax:/marca/aparelhos-xmax",
       "sort": "highest_price"
-    },
-    {
-      "type": "collection-shelf",
-      "shuffle": true,
-      "limit": 24,
-      "page": 1,
-      "collection_id": "60126784d6981740b49baa70:brands:Arizer :/marca/aparelhos-arizer",
-      "sort": "lowest_price",
-      "title": "Acessórios Arizer",
-      "autoplay": 5000
     },
     {
       "type": "collection-shelf",
