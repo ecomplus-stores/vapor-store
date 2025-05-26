@@ -93,7 +93,8 @@
       "limit": 24,
       "page": 1,
       "collection_id": "6012678cd6981740b49baa82:brands:Storz e Bickel:/marca/storz-bickel",
-      "sort": "lowest_price"
+      "sort": "lowest_price",
+      "title": "Acessórios Storz & Bickel"
     },
     {
       "type": "collection-shelf",
