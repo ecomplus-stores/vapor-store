@@ -3056,12 +3056,6 @@
     </url>
   
     <url>
-      <loc>https://www.vaporstore.vip/pages/entrega</loc>
-      <changefreq>monthly</changefreq>
-      <priority>0.7</priority>
-    </url>
-  
-    <url>
       <loc>https://www.vaporstore.vip/pages/politica-de-garantia-reembolso-e-devolucao</loc>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
@@ -3075,6 +3069,12 @@
   
     <url>
       <loc>https://www.vaporstore.vip/pages/termos</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.7</priority>
+    </url>
+  
+    <url>
+      <loc>https://www.vaporstore.vip/pages/entrega</loc>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
     </url>
