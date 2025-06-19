@@ -3050,6 +3050,12 @@
     </url>
   
     <url>
+      <loc>https://www.vaporstore.vip/pages/contato</loc>
+      <changefreq>monthly</changefreq>
+      <priority>0.7</priority>
+    </url>
+  
+    <url>
       <loc>https://www.vaporstore.vip/pages/entrega</loc>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
@@ -3068,19 +3074,13 @@
     </url>
   
     <url>
-      <loc>https://www.vaporstore.vip/pages/termos</loc>
-      <changefreq>monthly</changefreq>
-      <priority>0.7</priority>
-    </url>
-  
-    <url>
       <loc>https://www.vaporstore.vip/pages/trocas</loc>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
     </url>
   
     <url>
-      <loc>https://www.vaporstore.vip/pages/contato</loc>
+      <loc>https://www.vaporstore.vip/pages/termos</loc>
       <changefreq>monthly</changefreq>
       <priority>0.7</priority>
     </url>
