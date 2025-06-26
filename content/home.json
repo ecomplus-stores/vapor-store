@@ -108,15 +108,6 @@
       "sort": "slug",
       "link": "Yocan",
       "autoplay": 5000
-    },
-    {
-      "type": "collection-shelf",
-      "shuffle": true,
-      "limit": 12,
-      "page": 1,
-      "collection_id": "60126787d6981740b49baa76:brands:Firefly:/marca/firefly",
-      "sort": "slug",
-      "title": "Acessórios Firefly"
     }
   ]
 }
