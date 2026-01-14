@@ -41,7 +41,7 @@
   },
   "dependencies": {
     "@ecomplus/storefront-template": "^2.0.0-beta.271",
-    "@netlify/zip-it-and-ship-it": "^5.13.5",
+    "@netlify/zip-it-and-ship-it": "^14.2.0",
     "firebase-tools": "^13.29.2",
     "lottie-web": "^5.12.2"
   },
